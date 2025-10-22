@@ -1,0 +1,1214 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ricardo Sánchez">
+      
+      
+      
+        <link rel="prev" href="../../U02_THD/Activitats%20U2/">
+      
+      
+        <link rel="next" href="../Activitats%20U3/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Unitat 03. Intel·ligència artificial (IA) - Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9f615399.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.649f08f9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/my.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#intelligencia-artificial-ia" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-header__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unitat 03. Intel·ligència artificial (IA)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-nav__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitalització aplicada als sectors productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U01 Introduccio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            U01 Introduccio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/01_Introduccio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 01. Digitalització en els sistemes productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/Activitats%20U1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 1. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U02 THD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            U02 THD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/02_THD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 02. Caracterització de tecnologíes habilitadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/Activitats%20U2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U03 IA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            U03 IA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 03. Intel·ligència artificial (IA)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 03. Intel·ligència artificial (IA)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-antecedents" class="md-nav__link">
+    1. Antecedents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-definicio" class="md-nav__link">
+    2. Definició
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tipus-de-ia" class="md-nav__link">
+    3. Tipus de IA
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Tipus de IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intelligencia-artificial-estreta" class="md-nav__link">
+    Intel·ligència artificial estreta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intelligencia-artificial-general" class="md-nav__link">
+    Intel·ligència artificial general
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superintelligencia-artificial" class="md-nav__link">
+    Superintel·ligència artificial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-com-apren-una-ia" class="md-nav__link">
+    4. Com aprén una IA
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Com aprén una IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-aprenentatge-automatic-machine-learning" class="md-nav__link">
+    4.1. Aprenentatge automàtic (machine learning)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-aprenentatge-profund-deep-learning" class="md-nav__link">
+    4.2. Aprenentatge profund (deep learning)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-la-ia-i-les-dades" class="md-nav__link">
+    5. La IA i les dades
+  </a>
+  
+    <nav class="md-nav" aria-label="5. La IA i les dades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-aspectes-critics-en-el-tractament-de-les-dades-en-ia" class="md-nav__link">
+    5.1. Aspectes crítics en el tractament de les dades en IA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rellacio-de-la-ia-amb-el-sector-productiu" class="md-nav__link">
+    6 Rel·lació de la IA amb el sector productiu
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Rel·lació de la IA amb el sector productiu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-models-de-llenguatge-lms" class="md-nav__link">
+    6.1 Models de llenguatge (LMs)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-model-context-protocol-mcp" class="md-nav__link">
+    6.2 Model Context Protocol (MCP)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mineria-de-dades-i-la-ia" class="md-nav__link">
+    7. Mineria de dades i la IA
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Mineria de dades i la IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-proces-de-mineria-de-dades" class="md-nav__link">
+    7.1. Procés de mineria de dades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-tipus-de-mineria-de-dades" class="md-nav__link">
+    7.2 Tipus de mineria de dades
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-contribucio-de-la-ia-a-les-thd" class="md-nav__link">
+    8. Contribució de la IA a les THD
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Activitats%20U3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-antecedents" class="md-nav__link">
+    1. Antecedents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-definicio" class="md-nav__link">
+    2. Definició
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tipus-de-ia" class="md-nav__link">
+    3. Tipus de IA
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Tipus de IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intelligencia-artificial-estreta" class="md-nav__link">
+    Intel·ligència artificial estreta
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intelligencia-artificial-general" class="md-nav__link">
+    Intel·ligència artificial general
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superintelligencia-artificial" class="md-nav__link">
+    Superintel·ligència artificial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-com-apren-una-ia" class="md-nav__link">
+    4. Com aprén una IA
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Com aprén una IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-aprenentatge-automatic-machine-learning" class="md-nav__link">
+    4.1. Aprenentatge automàtic (machine learning)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-aprenentatge-profund-deep-learning" class="md-nav__link">
+    4.2. Aprenentatge profund (deep learning)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-la-ia-i-les-dades" class="md-nav__link">
+    5. La IA i les dades
+  </a>
+  
+    <nav class="md-nav" aria-label="5. La IA i les dades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-aspectes-critics-en-el-tractament-de-les-dades-en-ia" class="md-nav__link">
+    5.1. Aspectes crítics en el tractament de les dades en IA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-rellacio-de-la-ia-amb-el-sector-productiu" class="md-nav__link">
+    6 Rel·lació de la IA amb el sector productiu
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Rel·lació de la IA amb el sector productiu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-models-de-llenguatge-lms" class="md-nav__link">
+    6.1 Models de llenguatge (LMs)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-model-context-protocol-mcp" class="md-nav__link">
+    6.2 Model Context Protocol (MCP)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-mineria-de-dades-i-la-ia" class="md-nav__link">
+    7. Mineria de dades i la IA
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Mineria de dades i la IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-proces-de-mineria-de-dades" class="md-nav__link">
+    7.1. Procés de mineria de dades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-tipus-de-mineria-de-dades" class="md-nav__link">
+    7.2 Tipus de mineria de dades
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-contribucio-de-la-ia-a-les-thd" class="md-nav__link">
+    8. Contribució de la IA a les THD
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="intelligencia-artificial-ia">Intel·ligència artificial (IA)</h1>
+<h2 id="1-antecedents">1. Antecedents</h2>
+<p>La història de la intel·ligència artificial es remunta a l’Antiguitat, amb mites que descriuen màquines dotades d’intel·ligència. No obstant això, el desenvolupament formal de la IA com a camp d’estudi comença a mitjans del segle XX, quan <strong>Alan Turing</strong>, matemàtic i pioner de la informàtica, va establir les bases teòriques en plantejar la pregunta: «Pot una màquina pensar?», en el seu famós article de 1950.</p>
+<div class="admonition info">
+<p class="admonition-title">Alan Turing</p>
+<p>Alan Turing va ser un matemàtic, lògic i criptògraf britànic considerat un dels pares de la informàtica moderna.<br />
+Durant la Segona Guerra Mundial va jugar un paper clau en desxifrar els codis de la màquina <em>Enigma</em> utilitzada per l’Alemanya nazi.<br />
+Va formular el concepte de màquina de Turing, fonamental per entendre el funcionament dels ordinadors.<br />
+Tot i els seus èxits, va ser perseguit per la seua homosexualitat i va morir tràgicament el 1954.</p>
+<p><img alt="Alan Turing" src="../images/alanturing.jpg" /></p>
+</div>
+<p>El terme <em>intel·ligència artificial</em> fou encunyat en la Conferència de Dartmouth en 1956, on es reuniren visionaris com John McCarthy, Marvin Minsky, Allen Newell i Herbert Simon. Estos pioners aspiraven a crear programes informàtics que pogueren imitar la intel·ligència humana.</p>
+<p>Durant les dècades dels cinquanta i seixanta, l’optimisme regnava. Es desenvolupaven programes de IA que resolien problemes matemàtics o de lògica. No obstant això, la falta d’avanços significatius portà a un període de desil·lusió conegut com <strong>«l’hivern de la IA»</strong> en els anys setanta i vuitanta.</p>
+<p>El ressorgiment de la IA començà en la dècada dels huitanta amb avanços en algorismes d’aprenentatge automàtic i el creixent ús de sistemes basats en el coneixement. La computació més potent i la disponibilitat de grans conjunts de dades impulsaren el progrés en àrees com el reconeixement de veu i la visió per computador. L’última dècada ha vist èxits extraordinaris gràcies a l’<strong>aprenentatge profund</strong>, una ramificació que utilitza xarxes neuronals profundes amb múltiples capes. El creixement massiu de dades (big data) ha sigut fonamental per entrenar models cada vegada més precisos i complexos.</p>
+<p>La IA en l’actualitat presenta avanços significatius en diversos àmbits, millorant l'eficiència i la qualitat de vida. S’han desenvolupat també plans de debat ètics i socials, com preocupacions sobre privacitat, seguretat i canvis en el mercat laboral.</p>
+<p>Mirant cap al futur, s’espera una major autonomia en sistemes i una integració més estreta entre humans i màquines cada vegada més. És crucial abordar èticament els desafiaments i establir regulacions per a un ús responsable. La inversió en educació contínua serà essencial per a preparar la societat per als canvis en el panorama laboral. La gestió acurada determinarà com la IA impactarà positivament en la societat i s’integrarà en harmonia amb la humanitat.</p>
+<h2 id="2-definicio">2. Definició</h2>
+<p>La <strong>intel·ligència artificial</strong> es refereix a la <strong>capacitat de les màquines i sistemes informàtics per a realitzar tasques que requereixen de la intel·ligència humana</strong>.</p>
+<p>En realitat, la IA és un camp interdisciplinari que combina la informàtica, les matemàtiques, la ciència cognitiva i la ciència computacional amb l’objectiu de desenvolupar sistemes i màquines capaces de realitzar tasques que abasten des de processos simples fins a activitats complexes que impliquen aprenentatge, raonament, percepció, interacció i presa de decisions.</p>
+<p>Les tasques en què la IA es desenvolupa, emulant i en alguns casos superant, la intel·ligència humana abasten àrees com el <strong>reconeixement de patrons</strong>, la <strong>comprensió del llenguatge natural</strong>, la <strong>visió per computador</strong> i la <strong>capacitat de prendre decisions basades en dades</strong>. Això, com veurem en esta unitat, contribuirà a l’automatització i millora de processos en una àmplia varietat de sectors.</p>
+<h2 id="3-tipus-de-ia">3. Tipus de IA</h2>
+<p>Actualment hi ha una àmplia varietat de models de IA. Tots estos models estan basats en els següents tipus de IA:</p>
+<h3 id="intelligencia-artificial-estreta">Intel·ligència artificial estreta</h3>
+<p>La IA estreta, també coneguda com a <strong>IA dèbil</strong> o <strong>IA especialitzada</strong>, es caracteritza per la seua capacitat per a portar a terme tasques específiques o limitades. Estos sistemes exhibeixen un alt nivell d’especialització en un domini particular, demostrant habilitats expertes en eixe àmbit. No obstant això, la seua limitació recau en la falta d’adaptabilitat a contextos diferents i la incapacitat d’aprendre noves habilitats més enllà de la seua tasca específica.</p>
+<p>Exemples pràctics de la IA estreta inclouen sistemes de <strong>reconeixement de veu</strong> que operen en assistents virtuals, com Siri o Google Assistant, <strong>motors de recomanació en plataformes de <em>streaming</em></strong> que suggerixen contingut basat en preferències de l’usuari, o els LLM (Chat-GPT, Copilot...) Encara que estos sistemes oferixen un rendiment destacat en les seues designacions, careixen de la versatilitat i l’aprenentatge generalitzat que caracteritzen la IA forta.</p>
+<h3 id="intelligencia-artificial-general">Intel·ligència artificial general</h3>
+<p>La <strong>IA general</strong>, també anomenada <strong>IA forta</strong> o <strong>IA de nivell humà</strong>, fa referència a la capacitat d'un sistema informàtic de comprendre, aprendre i aplicar el coneixement en una àmplia varietat de tasques, similar a la intel·ligència humana.</p>
+<p>Una IA general hauria de poder realitzar diferents tipus de tasques cognitives i adaptar-se a noves situacions sense instruccions humanes. És el tipus de IA que es representa sovint en la ciència ficció, on les màquines actuen segons la seua pròpia consciència.</p>
+<p>Encara que la IA general té com a objectiu la imitació completa de la cognició humana, la seua implementació encara es manté en el camp dels models teòrics. La IA general podria raonar, resoldre problemes complexos, comprendre el llenguatge natural com ho fan els humans i fins i tot demostrar un raonament intuïtiu propi de la cognició humana.</p>
+<h3 id="superintelligencia-artificial">Superintel·ligència artificial</h3>
+<p>La superintel·ligència artificial és un concepte especulatiu que fa referència a un nivell d’intel·ligència que supera els humans en tots els aspectes, incloent la resolució de problemes, la presa de decisions i la creativitat.</p>
+<p>La idea de la superintel·ligència planteja preocupacions ètiques i filosòfiques significatives, ja que es especula sobre com la IA podria afectar la societat, l’economia i l’existència humana.</p>
+<h2 id="4-com-apren-una-ia">4. Com aprén una IA</h2>
+<p>Un aspecte clau en una IA és com esta aprén. Actualment existeixen dos tipus d’aprenentatge que difereixen, a grans trets, en la complexitat de tant el coneixement com dels mecanismes que utilitzen per adquirir-lo:</p>
+<h3 id="41-aprenentatge-automatic-machine-learning">4.1. Aprenentatge automàtic (<em>machine learning</em>)</h3>
+<p>L’aprenentatge automàtic se centra en desenvolupar algoritmes i models que permeten a les màquines aprendre patrons a partir de dades, així com fer prediccions i prendre decisions basant-se en l’experiència adquirida com a resultat de l’exposició a eixes dades.</p>
+<p>Estos models de IA poden ajustar-se i millorar el seu rendiment a mesura que s’exposa a més dades. En l’argot, es diu que s’està entrenant una IA quan se li estan proporcionant eixes dades.</p>
+<p><img alt="Machine Learning" src="../images/machine-learning.webp" /></p>
+<p>La forma en què s’aplica el <em>machine learning</em> per entrenar una IA no és trivial. De fet, existeixen diverses tècniques:</p>
+<h4 id="aprenentatge-supervisat">Aprenentatge supervisat</h4>
+<p>El model s’entrena amb exemples etiquetats i el procés d’aprenentatge implica ajustar els seus paràmetres per minimitzar la diferència entre les prediccions i les respostes reals.</p>
+<p>Un exemple representatiu d’este tipus d’aprenentatge podria ser la detecció de correu no desitjat en una bústia de correu electrònic o l’avaluació de sol·licituds de préstecs basant-se en l’historial de crèdit per predir la probabilitat d’impagament.</p>
+<h4 id="aprenentatge-no-supervisat">Aprenentatge no supervisat</h4>
+<p>El model se centra en dades sense etiquetes o categories predefinides. El seu objectiu principal és trobar patrons intrínsecs o estructures subjacents en les dades. A diferència de l’aprenentatge supervisat, ací el model no rep informació explícita sobre les eixides correctes.</p>
+<p>Un exemple molt típic és la segmentació de clients per a personalitzar estratègies de màrqueting basades en comportaments de compra similars.</p>
+<h4 id="aprenentatge-semisupervisat">Aprenentatge semisupervisat</h4>
+<p>Combina elements d’aprenentatge supervisat i no supervisat, permetent que el model es beneficie de conjunts de dades que contenen tant exemples etiquetats com no etiquetats. La idea és aprofitar la informació limitada en els conjunts de dades etiquetades mentre s’exploren patrons addicionals en els estructures o les dades no etiquetades. S’usa quan obtindre dades etiquetades és costós o laboriós.</p>
+<p>Per exemple, en el diagnòstic de malalties a partir d’imatges mèdiques, en què un subconjunt d’imatges està etiquetat, o en aplicacions de reconeixement de veu, on sols es disposa de determinades transcripcions.</p>
+<h4 id="aprenentatge-reforcat">Aprenentatge reforçat</h4>
+<p>El model aprén prenent decisions i rebent retroalimentació en forma de recompenses o penalitzacions, ajustant el seu comportament en conseqüència per aconseguir un benefici a llarg termini.</p>
+<p>Per exemple, en els vehicles autònoms s’utilitza per determinar com és millor mantindre la distància als obstacles i poder adaptar la velocitat del vehicle i evitar una col·lisió.</p>
+<h3 id="42-aprenentatge-profund-deep-learning">4.2. Aprenentatge profund (<em>deep learning</em>)</h3>
+<p>L’aprenentatge profund és un avanç de l’aprenentatge automàtic estàndard, que implementa en les xarxes neuronals artificials múltiples capes (anomenades xarxes neuronals profundes) per modelar i resoldre problemes complexos.</p>
+<p><img alt="Xarxa neuronal" src="../images/neural_networks-001.png" /></p>
+<p>Estes xarxes utilitzen diverses capes per aprendre i poder realitzar representacions complexes. A més, poden aprendre característiques que van des del més bàsic (el que és l’abast màxim de l’aprenentatge automàtic) fins al més abstracte, destacant en tasques com el reconeixement d’imatges, el processament de llenguatge natural o l’anàlisi de textos i àudios.</p>
+<p>A diferència de l’aprenentatge automàtic, l’aprenentatge profund necessita un volum de dades molt més gran per entrenar-se i alçar el seu rendiment de manera eficient, però pot interpretar tant dades simples com més complexes (imatges, textos, àudios…). Evidentment, el temps d’entrenament d’una IA amb aprenentatge profund és bastant major, però el rendiment obtingut fa que valga la pena.</p>
+<p>A continuació, alguns exemples reals d’aplicació de l’aprenentatge profund:</p>
+<ul>
+<li>La identificació de patrons en imatges de radiodiagnòstic per a la detecció primerenca de malalties.</li>
+<li>La identificació d’anomalies en els productes generats en la cadena de fabricació, per a classificacions de categories, segons la qualitat.</li>
+<li>La traducció automàtica d’un idioma a un altre; per exemple, de text amb l’eina Google Translate; d’àudio, amb productes com Timekettle o Vasco, o de vídeo, com Teams, Meet o el brotxe AI Pin.</li>
+<li>L’avaluació automàtica d’opinions expressades en comentaris de xarxes socials o ressenyes de productes per determinar l’actitud dels usuaris i fer el seu perfilat.</li>
+<li>El processament del llenguatge natural per entendre i respondre les peticions dels usuaris. Pot donar-se a partir de textos, com assistents virtuals com Alexa, Siri o Google Assistant, o d’altres medis (text, imatge…), com ChatGPT, Copilot o Gemini.</li>
+<li>La conversió automàtica d’enregistraments de veu en text, àmpliament utilitzada en sistemes de transcripció i tant en aplicacions com en usos com Telegram.</li>
+<li>El reconeixement de l’entorn en vehicles autònoms a través de càmeres i sensors per reconéixer vianants, objectes, senyals, obstacles… i desenvolupar rutes segures.</li>
+<li>El reconeixement d’imatges per a anàlisi i classificacions. Esta aplicació està molt estesa, sobretot en dispositius mòbils (com Facebook, Google Fotos, Pinterest…). En les aplicacions mòbils que incorporen IA, esta funcionalitat permet identificar persones i facilitar tant la recerca d’informació com l’etiquetatge massiu.</li>
+</ul>
+<p><img alt="Machine Learning vs Deep Learning" src="../images/deep.jpeg" /></p>
+<div class="admonition info">
+<p class="admonition-title">Prompts</p>
+<p>En l’actualitat, l’usuari pot interactuar amb un assistent virtual o amb els models de llenguatge natural, com ChatGPT, Copilot o Gemini. S’empren instruccions, conegudes com <em>prompts</em>, que guien la forma de resposta.</p>
+<p>La forma més eficient de fer-ho és amb frases o sentències que s’aproximen a com processem els humans el llenguatge. Estes instruccions han de ser clares, indicar el nom del programa i les seues funcions, així com proporcionar la informació necessària per assegurar respostes coherents, precises i rellevants.</p>
+</div>
+<h2 id="5-la-ia-i-les-dades">5. La IA i les dades</h2>
+<p>Dels models d’aprenentatge vistos a l’apartat anterior es dedueix que l’èxit d’una IA està directament relacionat amb la quantitat de dades amb què la puguem entrenar. En este context, la interacció entre la IA i les dades abasta un procés continu i complex, des de la recopilació inicial d’informació fins a la millora constant dels models, passant per etapes crítiques com el preprocesament, l’entrenament, l’avaluació i la interpretació de resultats.</p>
+<p><strong>Recopilació de dades</strong></p>
+<p>La IA depén de dades per aprendre patrons i realitzar tasques. Esta fase comença amb la definició clara del problema per abordar. Això implica identificar els objectius específics i les preguntes clau que es busca resoldre. Posteriorment, se seleccionen les variables rellevants necessàries per resoldre el problema i s’identifiquen les fonts de dades disponibles, que poden incloure bases de dades internes, dades externes o informació recopilada de sensors, dispositius IoT, etc.</p>
+<p><strong>Preprocesament de dades</strong></p>
+<p>Abans d’entrenar una IA amb dades, és necessari realitzar el preprocesament d’aquestes. Implica netejar les dades, processar valors perduts i normalitzar escales per a garantir que estiguen en una forma utilitzable.</p>
+<p>Les dades en brut rara vegada són perfectes. El preprocesament assegura que les dades siguen coherents i estiguen llestes per a ser consumides pels algoritmes de la IA.</p>
+<p><strong>Modelat i entrenament</strong></p>
+<p>Durant l’entrenament d’un model de IA, s’utilitza un conjunt de dades per ajustar els paràmetres del model i permetre que aprenga patrons.</p>
+<p>La diversitat i representativitat del conjunt de dades d’entrenament són fonamentals perquè el model generalitze bé en situacions del món real i evite casos esbiaixats.</p>
+<p><strong>Avaluació i validació</strong></p>
+<p>Després de l’entrenament, el model s’avalua en un conjunt de dades de prova per mesurar el seu rendiment i generalització. Esta avaluació garanteix que el model no sols memoritze les dades d’entrenament, sinó que també puga realitzar prediccions precises en dades noves, que és la finalitat última de la IA.</p>
+<p><strong>Iteració i millora contínua</strong></p>
+<p>La IA és un procés iteratiu. Després de la implementació inicial, es recopilen més dades i es repetixen els processos per millorar el model i que es puga adaptar a canvis en l’entorn.</p>
+<p>Gràcies a la millora contínua, es garanteix que la IA es mantinga rellevant i útil a mesura que les condicions canvien i s’acumula més informació.</p>
+<p><img alt="IA i dades" src="../images/ia_datos.svg" /></p>
+<p><strong>Grans volums de dades (<em>big data</em>)</strong></p>
+<p>La IA en molts casos treballa amb grans conjunts de dades coneguts com <em>big data</em>.</p>
+<p>D’una banda, la IA es beneficia del <em>big data</em> per aprendre patrons i prendre decisions més afinades. D’altra banda, l’anàlisi de grans conjunts de dades alimenta la IA, permetent l’automatització i optimització de processos en diverses indústries. La combinació de la IA i el <em>big data</em> impulsa solucions avançades i eficients, i és essencial per entrenar models de IA complexos, així com per extraure patrons significatius.</p>
+<h3 id="51-aspectes-critics-en-el-tractament-de-les-dades-en-ia">5.1. Aspectes crítics en el tractament de les dades en IA</h3>
+<p>Fins al moment hem pogut comprovar les bondats de la IA i com utilitza les dades per evolucionar. No obstant això, precisament este tractament de dades per part de la IA està generant una sèrie d’aspectes crítics que programadors, experts, usuaris i societat en general hem d’abordar si volem obtindre un producte que siga tan útil com ètic, segur i fiable. Vegem alguns d’estos aspectes:</p>
+<ul>
+<li>
+<p><strong>Privacitat i protecció de dades personals</strong></p>
+<p>L’ètica en la IA exigix que la recopilació de dades personals es realitze de manera responsable, amb el <strong>consentiment informat dels usuaris i limitant la recopilació al necessari per a la finalitat establida</strong>. Així mateix, s’ha de garantir que les dades estiguen <strong>anonimitzades o desagregades</strong> quan siga possible per a protegir la privacitat de les persones i minimitzar el risc d’identificació d’individus en els conjunts de dades.</p>
+<p>D’altra banda, la <strong>seguretat de les dades</strong> és crucial per evitar bretxes i garantir que la informació sensible no caiga en mans equivocades, la qual cosa podria tindre conseqüències perjudicials per a la privacitat.</p>
+</li>
+<li>
+<p><strong>Igualtat i absència de biaixos</strong></p>
+<p>És necessari que es produïsca la identificació i mitigació de <strong>biaixos</strong> presents en les dades d’entrenament, ja que els models de IA poden aprendre i perpetuar prejudicis presents en estes dades.</p>
+<p>Els sistemes de IA han d’estar dissenyats per garantir l’equitat en la presa de decisions, evitant discriminacions injustes basades en característiques com el gènere, la raça o l’orientació sexual.</p>
+<p>La inclusió d’aquests biaixos i prejudicis, ja siga inconscientment o no, en els conjunts de dades amb què s’entrena una IA amb el model de <em>machine learning</em> provoca que en acabat acabe actuant com a filtre <strong><em>machine bias</em></strong> per als resultats que es proporcionen.</p>
+<p>Abordar la igualtat d’auditories de dades, diversitat en equips de desenvolupament, transparència en models, ajustos per mitigar el biaix i monitoratge és fonamental.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Navega</p>
+<p>El biaix (machine bias) és, sens dubte, un problema de la intel·ligència artificial. En este article de <a href="https://datademia.es/blog/machine-bias-sesgos-inconscientes-en-el-machine-learning"><em>Datademia</em></a> trobaràs alguns exemples en imatges reals sobre els biaixos en els resultats i els prejudicis existents en estes dades.</p>
+</div>
+<ul>
+<li>
+<p><strong>Interpretació i explicabilitat</strong></p>
+<p>La <strong>interpretació dels resultats</strong> dels models de IA i l’explicabilitat de les decisions són aspectes crucials, especialment en àrees crítiques com l’atenció mèdica i les finances.</p>
+<p>La <strong>transparència en el procés de presa de decisions</strong> ajuda a construir la confiança dels usuaris i permet la identificació i correcció de possibles errors.</p>
+<p>És tal la importància d’este assumpte que s’estan realitzant importants esforços per a evolucionar models explicatius que acompanyen a la IA per a que els usuaris entenguen clarament el procés de presa de decisions que ha generat la resposta sol·licitada.</p>
+</li>
+<li>
+<p><strong>Responsabilitat i rendició de comptes</strong></p>
+<p>Tant els desenvolupadors de la IA com els usuaris han d’assumir la responsabilitat pels <strong>errors dels sistemes d’IA</strong>, especialment quan estos errors poden tindre conseqüències adverses i serioses, com en l’atenció mèdica, la justícia o l’educació.</p>
+<p>En este sentit, és necessari impulsar auditories periòdiques i una supervisió contínua per a avaluar el rendiment del model i garantir la conformitat amb estàndards ètics.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Navega</p>
+<p>Pots veure alguns dels errors comesos per la IA en este article de <a href="https://www.microsiervos.com/archivo/ia/cruce-de-cables-57-premios-ia-darwin-2025-inteligencia-artificial.html"><em>Microsiervos</em>: Premios IA Darwin 2025</a>.</p>
+</div>
+<h2 id="6-rellacio-de-la-ia-amb-el-sector-productiu">6 Rel·lació de la IA amb el sector productiu</h2>
+<p>Algunes aplicacions de la IA en el sector productiu d'Informàtica i telecomunicacions són:</p>
+<ul>
+<li><strong>Recopilació de dades de sistems i xarxes</strong> per a la detecció de problemes i la predicció de fallades.</li>
+<li><strong>Ciberseguretat avançada</strong>: anàlisi de trànsit de xarxa per a detectar amenaces i intrusions, anàlisi de comportament d'usuaris per a identificar activitats sospitoses i automatització de respostes a incidents de seguretat.</li>
+<li><strong>Automatizació de processos de TI</strong>: gestió automatitzada de servidors, xarxes i aplicacions, així com la monitorització i manteniment predictiu d'infraestructures.</li>
+<li><strong>Automatizació de tasques de desenvolupament de programari</strong>: generació de codi, proves automatitzades i depuració de programari.</li>
+</ul>
+<h3 id="61-models-de-llenguatge-lms">6.1 Models de llenguatge (LMs)</h3>
+<p>Els <strong>models de llenguatge</strong> (LMs, per les seues sigles en anglès) són sistemes d’intel·ligència artificial dissenyats per comprendre, generar i manipular el llenguatge humà. Aquests models s’entrenen amb grans quantitats de dades textuals i aprenen a reconéixer patrons, estructures gramaticals i relacions semàntiques en el llenguatge.</p>
+<p>Es poden classificar segons la seua mida i complexitat:</p>
+<ul>
+<li><strong>SLM (Small Language Models)</strong>: models més petits i lleugers, com GPT-2 o Qwen2, que són més fàcils de desplegar i tenen menys requisits computacionals.</li>
+<li><strong>LLM (Large Language Models)</strong>: models molt grans i complexos, com GPT-4, PaLM o LLaMA, que poden manejar tasques de llenguatge molt diverses i complexes, però requereixen una gran potència computacional per a l’entrenament i el desplegament.</li>
+</ul>
+<p>Una aplicació dels LMs en programació és la <strong>generació automàtica de codi</strong>. Alguns dels LMs més coneguts en aquest àmbit són:</p>
+<ul>
+<li><strong>GitHub Copilot</strong>: desenvolupat per GitHub en col·laboració amb OpenAI, utilitza el model GPT per ajudar els programadors a escriure codi més ràpidament i amb menys errors.</li>
+<li><strong>Tabnine</strong>: un assistent d’IA que ofereix suggeriments de codi en temps real, compatible amb diversos llenguatges de programació.</li>
+<li><strong>CodeWhisperer</strong>: desenvolupat per Amazon, utilitza models de llenguatge per ajudar els desenvolupadors a escriure codi en diversos llenguatges de programació.</li>
+<li><strong>CodeGPT</strong>: una variant de GPT-3 adaptada específicament per a la generació i comprensió de codi.</li>
+</ul>
+<p>És interessant l'ús de LLMs <strong>OpenSource</strong> per part d'empreses que no volen exposar el seu codi font a tercers. Alguns exemples són:</p>
+<ul>
+<li><strong>LLaMA</strong>: desenvolupat per Meta, és un model de llenguatge obert que pot ser utilitzat per a diverses aplicacions, incloent la generació de codi.</li>
+<li><strong>Qwen</strong>: desenvolupat per Alibaba, és un model de llenguatge que també pot ser utilitzat per a la generació de codi i altres tasques relacionades amb el llenguatge natural.</li>
+<li><strong>Mistral</strong>: desenvolupat per Mistral AI, és un model de llenguatge obert que pot ser utilitzat per a diverses aplicacions, incloent la generació de codi.</li>
+</ul>
+<h3 id="62-model-context-protocol-mcp">6.2 Model Context Protocol (MCP)</h3>
+<p>El <strong>Model Context Protocol (MCP)</strong> és un estàndard o protocol que defineix com els sistemes de IA poden comunicar-se i intercanviar informació de manera eficient i coherent amb fonts de dades externes.</p>
+<p>Va ser anunciat oficialment i publicat com a programari de codi obert per Anthropic el novembre de 2024, i posteriorment va ser adoptat pels principals proveïdors d'IA, com ara OpenAI i Google DeepMind.</p>
+<p>Abans de MCP, els desenvolupadors sovint havien de crear connectors personalitzats per a cada font de dades o eina, cosa que donava lloc a un problema d'integració de dades "N×M". MCP es va dissenyar com a resposta a aquest repte, oferint un protocol universal per interconnectar qualsevol assistent d'IA amb qualsevol eina estructurada o capa de dades.</p>
+<p><img alt="MCP" src="../images/mcp.png" /></p>
+<h2 id="7-mineria-de-dades-i-la-ia">7. Mineria de dades i la IA</h2>
+<p>La <strong>mineria de dades</strong> (o <strong><em>data mining</em></strong>) és una disciplina que combina la ciència estadística, la intel·ligència artificial, l’aprenentatge automàtic, la gestió de bases de dades i la visualització de dades. El seu objectiu és descobrir patrons significatius i extraure informació útil a través d’un procés d’exploració i anàlisi de grans quantitats de dades. És un pas crucial en el procés de presa de decisions en una àmplia gamma d’indústries.</p>
+<p>Encara que el terme <em>mineria de dades</em> es va popularitzar als anys noranta, les tècniques associades han existit des de molt abans i s’han anat desenvolupant a mesura que les organitzacions s’han adonat del valor que conté el volum de dades que emmagatzemen.</p>
+<p>Els avanços en el camp de la IA han impulsat en gran manera la mineria de dades: ara hi ha un aprofitament més eficient de les dades; a més, les prediccions són més precises i personalitzades, la qual cosa repercuteix en millors decisions i una optimització dels processos i resultats.</p>
+<h3 id="71-proces-de-mineria-de-dades">7.1. Procés de mineria de dades</h3>
+<p>L’aplicació de la mineria de dades comporta una sèrie d’etapes. A continuació, les vorem amb detall, contextualitzades en un negoci. No obstant això, el procés és similar per a un altre context:</p>
+<ul>
+<li>
+<p><strong>Comprensió del negoci</strong></p>
+<p>Aquesta és l’etapa inicial i potser la més important del procés de mineria de dades. Ací, s’identifiquen els <strong>objectius del negoci</strong> i <strong>s’avaluen les necessitats</strong> de la mineria de dades en el context de l’empresa i les seues limitacions.</p>
+<p>És essencial entendre <strong>què s’espera aconseguir</strong> a través de la mineria de dades i com els <strong>resultats</strong> s’usaran en la <strong>presa de decisions</strong> del negoci.</p>
+<p><em>Per exemple</em>, una empresa de comerç electrònic pot utilitzar la mineria de dades per a millorar les seues recomanacions de productes, el que requereix una comprensió de les dades sobre el comportament de compra dels clients i les característiques dels productes.</p>
+</li>
+<li>
+<p><strong>Comprensió de les dades</strong></p>
+<p>Una vegada s’han definit els objectius del negoci, el pas següent és <strong>comprendre les dades</strong> que s’utilitzaran. Açò implica <strong>recórrer les diferents fonts</strong> disponibles, <strong>descriure les dades</strong> per a obtindre una visió general del seu contingut i estructura, explorar-les per <strong>identificar tendències i relacions inicials</strong>, i <strong>verificar la seua qualitat</strong> per a detectar valors perduts o problemàtics.</p>
+<p>Durant aquesta etapa, es fa ús de <strong>tècniques de visualització i estadístiques descriptives</strong> per a obtindre una millor comprensió del perfil de dades.</p>
+<p><em>Per exemple</em>, es poden utilitzar histogrames per a entendre la distribució dels preus dels productes o gràfics de dispersió per a veure la relació entre l’edat del client i la seua despesa total.</p>
+</li>
+</ul>
+<p><img alt="Gràfiques de Data Mining" src="../images/grafiques.jpg" /></p>
+<ul>
+<li>
+<p><strong>Preparació de les dades</strong></p>
+<p>La preparació de les dades és una etapa crucial del procés, ja que la qualitat de les dades té un gran impacte en els resultats. Inclou la <strong>neteja</strong> de les dades per eliminar errors, la <strong>transformació al format adequat</strong>, la <strong>selecció de variables rellevants</strong> i l’<strong>organització</strong> de les dades per a l’anàlisi.</p>
+<p><em>Per exemple</em>, es poden imputar els valors faltants utilitzant la mitjana o la mediana, es poden normalitzar les dades perquè tinguen una mitjana de 0 i desviació estàndard d’1, o es poden eliminar les valoracions massa extremes.</p>
+</li>
+<li>
+<p><strong>Modelització</strong></p>
+<p>En aquesta etapa, <strong>es seleccionen i apliquen diversos models i algorismes de mineria de dades</strong> a les dades preparades. L’elecció del model i de l’algoritme depèn en gran mesura dels objectius concrets i de la naturalesa de les dades.</p>
+<p>Alguns enfocaments inclouen <strong>la classificació, la regressió, l’agrupament, la detecció d’anomalies i l’associació de regles</strong>. Cada un té els seus punts forts i febles, i pot ser més o menys adequat segons el problema que es vulga resoldre.</p>
+<p><em>Per exemple</em>, es pot utilitzar un model de regressió logística per predir si un client realitzarà una compra segons les seues característiques demogràfiques i el seu comportament.</p>
+</li>
+<li>
+<p><strong>Avaluació</strong></p>
+<p>Una vegada s’han construït els models, és important <strong>avaluar-ne la qualitat i l’eficàcia</strong>. Açò implica <strong>comparar els resultats de diferents models</strong>, <strong>validar amb noves dades</strong> per veure el seu comportament i <strong>interpretar els resultats dins del context del negoci</strong>.</p>
+<p>L’avaluació és una etapa crítica en el procés, ja que assegura que els models siguen robusts, fiables i útils per a la presa de decisions.</p>
+<p><em>Per exemple</em>, un supermercat pot utilitzar la informació de compres per avaluar si les recomanacions de productes han sigut útils per augmentar les vendes.</p>
+</li>
+<li>
+<p><strong>Desplegament</strong></p>
+<p>L’última etapa del procés és el desplegament, en què <strong>els models es posen en pràctica en l’entorn real</strong>. Açò pot implicar la <strong>integració dels models en sistemes de producció</strong>, el seu <strong>seguiment</strong> i <strong>manteniment</strong>, així com la seua <strong>actualització</strong> quan siga necessari.</p>
+<p><em>Per exemple</em>, una vegada que un model de recomanació de productes ha sigut validat, pot ser implementat en el lloc web de comerç electrònic per oferir recomanacions personalitzades als clients.</p>
+</li>
+</ul>
+<p><img alt="Procés de mineria de dades" src="../images/Ciclo-de-vida-del-Data-Mining.jpg" /></p>
+<h3 id="72-tipus-de-mineria-de-dades">7.2 Tipus de mineria de dades</h3>
+<p>La mineria de dades abasta diversos enfocaments, cadascun amb objectius específics per a extraure informació valuosa de conjunts de dades.</p>
+<p>L’elecció del tipus depén dels objectius específics de l’anàlisi i de la naturalesa de les dades disponibles. Sovint s’usa una combinació de diversos tipus per a obtenir una comprensió completa de les dades.</p>
+<p>Els principals tipus de mineria de dades són els següents:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Tipus de mineria</strong></th>
+<th><strong>Descripció</strong></th>
+<th><strong>Exemple</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descriptiva</strong></td>
+<td>Analitza característiques bàsiques de les dades per entendre la seua estructura i distribució.</td>
+<td>Analitzar l’edat i ingressos dels clients en una base de dades de vendes.</td>
+</tr>
+<tr>
+<td><strong>Predictiva</strong></td>
+<td>Utilitza dades històriques per a predir esdeveniments futurs.</td>
+<td>Previsió de vendes per al pròxim trimestre.</td>
+</tr>
+<tr>
+<td><strong>Associació</strong></td>
+<td>Descobreix relacions ocultes entre variables que apareixen juntes.</td>
+<td>Clients que compren bolquers també solen comprar cervesa.</td>
+</tr>
+<tr>
+<td><strong>Seqüencial</strong></td>
+<td>Analitza seqüències i patrons temporals en les dades.</td>
+<td>Predicció de clics en anuncis segons l’historial de navegació.</td>
+</tr>
+<tr>
+<td><strong>Textuals</strong></td>
+<td>Extrau coneixement de dades no estructurades com textos.</td>
+<td>Anàlisi de sentiment en xarxes socials sobre un producte.</td>
+</tr>
+<tr>
+<td><strong>Clústers</strong></td>
+<td>Agrupa dades similars en categories o clústers.</td>
+<td>Segmentació de clients segons preferències de compra.</td>
+</tr>
+<tr>
+<td><strong>Espacials</strong></td>
+<td>Analitza dades geogràfiques per a trobar patrons espacials.</td>
+<td>Identificar zones de trànsit congestionades amb mapes de calor.</td>
+</tr>
+<tr>
+<td><strong>Xarxes socials</strong></td>
+<td>Estudia relacions i patrons dins de xarxes socials.</td>
+<td>Identificació de comunitats en una xarxa social.</td>
+</tr>
+<tr>
+<td><strong>Temporals</strong></td>
+<td>Examina patrons i tendències en el temps.</td>
+<td>Predicció de la demanda d’abrics a l’hivern.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-contribucio-de-la-ia-a-les-thd">8. Contribució de la IA a les THD</h2>
+<p>La IA és una de les THD que proporcionen la infraestructura i les capacitats necessàries per a impulsar la digitalització i aprofitar les oportunitats que ofereix l’era digital.</p>
+<p>La capacitat de les THD per a combinar-se i treballar de manera sinèrgica és essencial en l’escenari tecnològic actual. La combinació estratègica d’estes tecnologies pot donar lloc a solucions molt més potents i eficients.
+A continuació, vegem com la IA contribueix a estes THD:</p>
+<p><strong>IoT (Internet de les Coses)</strong></p>
+<p>La IA potencia la capacitat d’anàlisi de dades de l’IoT per a obtindre informació valuosa.
+En la gestió de ciutats intel·ligents, sensors IoT en semàfors i càmeres de trànsit recullen dades. La IA analitza eixes dades per a predir patrons de trànsit, optimitzar la sincronització dels semàfors i millorar la fluïdesa del trànsit.</p>
+<p>Un altre exemple seria en l’agricultura, on sensors en el sòl i drons recopilen dades sobre condicions climàtiques i del sòl. La IA analitza estes dades per a optimitzar la quantitat d’aigua i nutrients proporcionats als cultius, millorant així l’eficiència agrícola.</p>
+<p><strong>Big Data</strong></p>
+<p>La IA en el <em>big data</em> permet anàlisis predictius i prescriptius.</p>
+<p>En el sector financer, algoritmes d’aprenentatge automàtic analitzen grans conjunts de dades històriques per a predir tendències del mercat i optimitzar carteres d’inversió.</p>
+<p>En l’àmbit mèdic, la IA analitza grans conjunts de dades d’històries clíniques per a predir malalties, personalitzant tractaments i millorant els resultats dels pacients.</p>
+<p><img alt="IA en medicina" src="../images/ia_medicina.jpg" /></p>
+<p><strong>Blockchain</strong></p>
+<p>La IA millora la seguretat en les transaccions <em>blockchain</em>.
+En l’àmbit financer, la IA analitza patrons de transaccions per a detectar possibles activitats fraudulentes en una cadena de blocs descentralitzada.</p>
+<p>En la cadena de subministrament, la combinació de <em>blockchain</em> i IA permet rastrejar productes des del seu origen fins a la destinació, assegurant la seua autenticitat i traçabilitat al llarg de tota la cadena.</p>
+<p>Quan es tracta de productes alimentaris, i també de productes frescos, això facilita al consumidor informació sobre l’origen i la història de tot el que consumeix.</p>
+<p>Una aplicació molt interessant de <em>blockchain</em>, encara en desenvolupament, és en els processos electorals, ja que proporciona transparència, immutabilitat i seguretat, evitant problemes com la corrupció o el frau electoral.</p>
+<p><strong>Computació en el núvol</strong></p>
+<p>La IA en el núvol permet el desplegament ràpid i escalable de models d’aprenentatge automàtic.
+En el comerç electrònic, les plataformes en el núvol permeten implementar <em>chatbots</em> basats en IA per a oferir atenció personalitzada al client segons la seua experiència d’usuari.</p>
+<p>En educació, les plataformes en el núvol amb serveis de IA poden personalitzar el contingut d’un curs i adaptar-lo als estils o necessitats individuals dels estudiants.</p>
+<p><strong>Realitat augmentada</strong></p>
+<p>La IA millora el reconeixement d’objectes en aplicacions de realitat augmentada (RA).</p>
+<p>En el sector minorista, la IA pot reconéixer productes i proporcionar informació detallada —com ressenyes o preus— en temps real a través de dispositius mòbils.</p>
+<p>En la indústria, la IA en la realitat augmentada pot ajudar tècnics de manteniment a reconéixer equips i mostrar instruccions de reparació pas a pas.</p>
+<p><strong>Realitat virtual</strong></p>
+<p>La IA en la realitat virtual (RV) millora la interactivitat i la personalització de l’entorn virtual.
+En la formació de pilots d’aeronaus, la IA pot simular escenaris complexos i adaptar-se dinàmicament segons les decisions dels participants.</p>
+<p>En l’atenció mèdica, la IA en la realitat virtual pot simular procediments quirúrgics i ajudar en la destresa del cirurgià per a proporcionar una pràctica més efectiva.</p>
+<p><strong>Impressió 3D</strong></p>
+<p>La IA optimitza el disseny per a impressions 3D.
+En la fabricació, la IA pot analitzar patrons en prototips i generar automàticament dissenys més eficients, reduint el temps de producció i els desaprofitaments de material.</p>
+<p>En arquitectura, la IA pot dissenyar estructures més eficients per a la impressió 3D, tenint en compte factors com la resistència i l’eficiència energètica.</p>
+<p><strong>Ciberseguretat</strong></p>
+<p>La IA millora la detecció d’amenaces cibernètiques.
+En les xarxes corporatives, la IA analitza patrons de trànsit en temps real per a identificar activitats malicioses i prevenir atacs.</p>
+<p>En la banca, la IA pot analitzar comportaments dels usuaris per a detectar transaccions inusuals i prevenir fraus financers.</p>
+<p><strong>Robòtica col·laborativa</strong></p>
+<p>En la gestió d’edificis intel·ligents, la IA analitza els sistemes de climatització, il·luminació i seguretat per a optimitzar el consum energètic, millorant el confort i la seguretat.</p>
+<p>La IA permet que els robots col·laboren de manera segura amb persones en entorns compartits.</p>
+<p>En la logística, els robots autònoms poden aprendre de les tasques dels treballadors humans i adaptar-se als canvis en l’entorn de treball.</p>
+<p>En la fabricació, la IA permet que els robots col·laboren en tasques d’assemblatge, adaptant-se a diferents peces i optimitzant l’eficiència de la línia de producció.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
