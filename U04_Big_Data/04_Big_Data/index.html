@@ -1,0 +1,1473 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ricardo Sánchez">
+      
+      
+      
+        <link rel="prev" href="../../U03_IA/Activitats%20U3/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Unitat 04. Big Data - Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9f615399.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.649f08f9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/my.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#big-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-header__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unitat 04. Big Data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-nav__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitalització aplicada als sectors productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U01 Introduccio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            U01 Introduccio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/01_Introduccio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 01. Digitalització en els sistemes productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/Activitats%20U1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 1. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U02 THD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            U02 THD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/02_THD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 02. Caracterització de tecnologíes habilitadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/Activitats%20U2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U03 IA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            U03 IA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U03_IA/03_IA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 03. Intel·ligència artificial (IA)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U03_IA/Activitats%20U3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U04 Big Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            U04 Big Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 04. Big Data
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 04. Big Data
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-big-data" class="md-nav__link">
+    1. Big Data
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Big Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-antecedents" class="md-nav__link">
+    1.1. Antecedents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-definicio-i-caracteristiques" class="md-nav__link">
+    1.2. Definició i característiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-dada-vs-informacio" class="md-nav__link">
+    1.3. Dada vs. informació
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cicle-de-vida-de-la-dada" class="md-nav__link">
+    2. Cicle de vida de la dada
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ciencia-de-dades-data-science" class="md-nav__link">
+    3. Ciència de dades (Data Science)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-analisi-de-dades-data-analytics" class="md-nav__link">
+    4. Anàlisi de dades (data analytics)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-emmagatzematge-de-big-data" class="md-nav__link">
+    5. Emmagatzematge de Big Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-aplicacio-del-big-data-en-les-empreses" class="md-nav__link">
+    6. Aplicació del big data en les empreses
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Aplicació del big data en les empreses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analisi-de-clients" class="md-nav__link">
+    Anàlisi de clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimitzacio-doperacions" class="md-nav__link">
+    Optimització d’operacions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presa-de-decisions-basada-en-dades" class="md-nav__link">
+    Presa de decisions basada en dades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marketing-personalitzat" class="md-nav__link">
+    Marketing personalitzat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prevencio-del-frau-i-seguretat" class="md-nav__link">
+    Prevenció del frau i seguretat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salut" class="md-nav__link">
+    Salut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos-humans-i-gestio-del-talent" class="md-nav__link">
+    Recursos humans i gestió del talent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisi-de-text-i-sentiment" class="md-nav__link">
+    Anàlisi de text i sentiment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-seguretat-de-les-dades" class="md-nav__link">
+    7. Seguretat de les dades
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Seguretat de les dades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-seguretat-de-la-informacio" class="md-nav__link">
+    7.1 Seguretat de la informació
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-la-privacitat-de-la-informacio" class="md-nav__link">
+    7.2 La privacitat de la informació
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-emmagatzematge-segur-de-dades" class="md-nav__link">
+    7.3 Emmagatzematge segur de dades
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-big-data" class="md-nav__link">
+    1. Big Data
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Big Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-antecedents" class="md-nav__link">
+    1.1. Antecedents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-definicio-i-caracteristiques" class="md-nav__link">
+    1.2. Definició i característiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-dada-vs-informacio" class="md-nav__link">
+    1.3. Dada vs. informació
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-cicle-de-vida-de-la-dada" class="md-nav__link">
+    2. Cicle de vida de la dada
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ciencia-de-dades-data-science" class="md-nav__link">
+    3. Ciència de dades (Data Science)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-analisi-de-dades-data-analytics" class="md-nav__link">
+    4. Anàlisi de dades (data analytics)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-emmagatzematge-de-big-data" class="md-nav__link">
+    5. Emmagatzematge de Big Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-aplicacio-del-big-data-en-les-empreses" class="md-nav__link">
+    6. Aplicació del big data en les empreses
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Aplicació del big data en les empreses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analisi-de-clients" class="md-nav__link">
+    Anàlisi de clients
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimitzacio-doperacions" class="md-nav__link">
+    Optimització d’operacions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presa-de-decisions-basada-en-dades" class="md-nav__link">
+    Presa de decisions basada en dades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marketing-personalitzat" class="md-nav__link">
+    Marketing personalitzat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prevencio-del-frau-i-seguretat" class="md-nav__link">
+    Prevenció del frau i seguretat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#salut" class="md-nav__link">
+    Salut
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursos-humans-i-gestio-del-talent" class="md-nav__link">
+    Recursos humans i gestió del talent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisi-de-text-i-sentiment" class="md-nav__link">
+    Anàlisi de text i sentiment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-seguretat-de-les-dades" class="md-nav__link">
+    7. Seguretat de les dades
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Seguretat de les dades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-seguretat-de-la-informacio" class="md-nav__link">
+    7.1 Seguretat de la informació
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-la-privacitat-de-la-informacio" class="md-nav__link">
+    7.2 La privacitat de la informació
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-emmagatzematge-segur-de-dades" class="md-nav__link">
+    7.3 Emmagatzematge segur de dades
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="big-data">Big Data</h1>
+<h2 id="1-big-data"><strong>1. Big Data</strong></h2>
+<h3 id="11-antecedents"><strong>1.1. Antecedents</strong></h3>
+<p>En els anys seixanta i setanta, quan la informàtica estava en bolquers, començà a gestar-se el que hui coneixem com a <strong><em>big data</em></strong>. Fou una època de primers experiments, quan els centres de dades empresarials tot just començaven a donar els seus primers passos.</p>
+<p>Encara que en aquell moment no sabíem que estàvem posant les bases d’una revolució, ja estàvem explorant un nou món de possibilitats amb les dades.</p>
+<p>La vertadera transformació, però, es produí al voltant de l’any 2005. Fou aleshores quan el món va prendre consciència de la magnitud de les dades que es generaven en plataformes com <strong>Facebook</strong> o <strong>YouTube</strong>. Aquest despertar coincidí amb el naixement de <strong>Hadoop</strong>, un entorn de treball de codi obert destinat a gestionar grans volums de dades. Fou com obrir una porta a un nou univers d’informació.</p>
+<p>En aquells anys també sorgiren les <strong>bases de dades NoSQL</strong>, adaptant-se a la diversitat i complexitat de les dades que començaven a aparéixer. La combinació de <strong>Hadoop</strong> i altres tecnologies de codi obert, com <strong>Spark</strong>, fou la fórmula màgica que féu el <em>big data</em> més accessible i econòmic.</p>
+<p>Des d’aleshores, l’explosió de dades ha sigut sorprenent. Ja no sols es tracta del que compartim en línia, sinó també dels objectes i dispositius connectats a Internet (<em>Internet of Things</em>, IoT), que contribueixen amb les seues pròpies corrents de dades, registrant patrons i comportaments.</p>
+<p>Amb l’arribada de l’aprenentatge automàtic, les nostres dades es feren més riques i complexes. Ara, no sols interpretem nosaltres les dades, sinó que també ensenyem les màquines a fer-ho. El <em>cloud computing</em> ha ampliat les possibilitats, permetent escalar les operacions i multiplicar la capacitat d’anàlisi, augmentant exponencialment les possibilitats d’aquesta disciplina.</p>
+<h3 id="12-definicio-i-caracteristiques"><strong>1.2. Definició i característiques</strong></h3>
+<p>El <em>big data</em> es refereix al <strong>conjunt de tècniques i tecnologies que permeten l’anàlisi i gestió de conjunts de dades extremadament grans i complexos</strong>, que excedeixen la capacitat de les eines tradicionals de tractament de dades.</p>
+<p>Les principals característiques del <em>big data</em> solen conéixer-se com les <strong>sis V</strong>:</p>
+<p>🔹 <strong>Volum</strong></p>
+<p>És la característica essencial: la massiva quantitat de dades que es generen i recopilen constantment.
+Exemples: dades comercials, sensors, xarxes socials.</p>
+<p>🔹 <strong>Velocitat</strong></p>
+<p>Fa referència a la rapidesa amb què es generen, processen i analitzen les dades.
+Exemple: la detecció de fraus financers en temps real.</p>
+<p>🔹 <strong>Varietat</strong></p>
+<p>Diversitat de tipus i fonts de dades: estructurades (bases de dades SQL), semiestructurades (XML, JSON) i no estructurades (textos, imatges).
+El repte és integrar i analitzar tota aquesta varietat de fonts de dades.</p>
+<p>🔹 <strong>Veracitat</strong></p>
+<p>Relacionada amb la <strong>qualitat</strong> i <strong>fiabilitat</strong> de les dades.
+Els conjunts de <em>big data</em> poden contindre errors o informació falsa, de manera que és fonamental garantir-ne la qualitat.</p>
+<p>🔹 <strong>Variabilitat</strong></p>
+<p>Fa referència a la <strong>inconsistència</strong> que pot existir en l’estructura o format de les dades.
+Exemple: dades meteorològiques que varien en freqüència i format.</p>
+<p>🔹 <strong>Valor</strong></p>
+<p>L’objectiu principal del <em>big data</em> és <strong>extraure informació valuosa i significativa</strong> per a la presa de decisions.
+La veritable essència del <em>big data</em> resideix en la seua <strong>capacitat de convertir dades en coneixements accionables.</strong></p>
+<p><img alt="Les sis V del Big Data" src="../images/6v.jpeg" /></p>
+<p>A més de les sis V, el <em>big data</em> també es caracteritza per:</p>
+<ul>
+<li>
+<p><strong>Agregació:</strong> capacitat d’unir dades de múltiples fonts per obtindre una visió més completa.
+  Ex.: anàlisi de clients combinant dades de compres, interaccions en xarxes socials i comentaris.</p>
+</li>
+<li>
+<p><strong>Complexitat:</strong> dificultat per a processar, analitzar i gestionar grans quantitats d’informació.
+  La complexitat prové de la combinació de totes les característiques anteriors (volum, velocitat, varietat, veracitat i variabilitat).</p>
+</li>
+</ul>
+<h3 id="13-dada-vs-informacio"><strong>1.3. Dada vs. informació</strong></h3>
+<p>En el món del <em>big data</em> és fonamental entendre la diferència entre <strong>dada</strong> i <strong>informació</strong>, dos termes sovint utilitzats com a sinònims però amb significats diferents.</p>
+<ul>
+<li>Una <strong>dada</strong> és una representació <em>“crua”</em> sense context: un número, una paraula, una imatge.</li>
+<li>La <strong>informació</strong>, en canvi, és el resultat del <strong>processament i organització</strong> d’aquestes dades perquè tinguen sentit.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Exemple:</p>
+<p>La temperatura “42” per si sola és una dada. Però si indiquem que “42 °C és la temperatura registrada a València a les 15:00 h”, aleshores tenim informació contextualitzada.</p>
+</div>
+<p>Així, el <em>big data</em> busca <strong>convertir dades en informació útil</strong> per a predir comportaments i ajudar en la presa de decisions.</p>
+<p>En el quadre següent es proporciona una visió clara de les diferències essencials entre <em>dada</em> i <em>informació</em> en el context del <em>big data</em>:
+mentre que les dades són la matèria primera, la informació és el resultat valuós que emergeix després del processament i la contextualització d’eixes dades.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Dada</strong></th>
+<th><strong>Informació</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Definició</strong></td>
+<td>Representació simbòlica d’una entitat o fet.</td>
+<td>Dades processades i contextualitzades, amb significat.</td>
+</tr>
+<tr>
+<td><strong>Naturalesa</strong></td>
+<td>Crues, sense processar.</td>
+<td>Processades i organitzades.</td>
+</tr>
+<tr>
+<td><strong>Significat</strong></td>
+<td>Sense significat inherent.</td>
+<td>Tenen significat i utilitat.</td>
+</tr>
+<tr>
+<td><strong>Transformació</strong></td>
+<td>Poden transformar-se en informació mitjançant processament.</td>
+<td>És el resultat del processament de dades.</td>
+</tr>
+<tr>
+<td><strong>Exemple</strong></td>
+<td>Número 27, paraula «tecnologia».</td>
+<td>Anàlisi climàtica a partir de registres de temperatura.</td>
+</tr>
+<tr>
+<td><strong>Utilitat en el big data</strong></td>
+<td>Punt de partida, es processen per obtindre informació valuosa.</td>
+<td>Objectiu final, el producte útil per a la presa de decisions.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Llacs de dades</p>
+<p>Els <em>data lakes</em> són repositoris centralitzats que permeten a una empresa emmagatzemar totes les seues dades estructurades i no estructurades, sense modificar-les. Sobre ells es poden executar diversos tipus d’anàlisi per a augmentar el rendiment empresarial.</p>
+</div>
+<h2 id="2-cicle-de-vida-de-la-dada">2. Cicle de vida de la dada</h2>
+<p>L’ús del <em>big data</em> comporta la transformació de grans volums de dades en informació útil i decisions precises.
+Aquest procés, intrínsec a la gestió eficient de grans conjunts d’informació, implica diverses fases interconnectades, cadascuna de les quals juga un paper crucial en la transformació de dades brutes en <em>insights</em> estratègics.
+Vegem quines són aquestes fases:</p>
+<ul>
+<li>
+<p><strong>Generació de dades</strong></p>
+<p>En aquesta primera fase del cicle s’estableix <strong>quines dades es tractaran i quines fonts les generaran</strong>.</p>
+<p>En un entorn de negoci, com hem comentat en unitats anteriors, cal conéixer el context del negoci per identificar les dades que és necessari recollir i on podem aconseguir-les.</p>
+<p><strong>Exemple:</strong> si tenim un negoci de comerç electrònic i volem conéixer l’acceptació del nostre producte, podem recórrer a les valoracions dels clients en la nostra web o a les ressenyes publicades en xarxes socials.</p>
+</li>
+<li>
+<p><strong>Captura i emmagatzematge de dades</strong></p>
+<p>Una vegada recollides, les dades es capturen i s’emmagatzemen per al seu processament posterior.
+Això pot realitzar-se mitjançant sistemes distribuïts com <strong>Hadoop</strong>, bases de dades <strong>NoSQL</strong> o fins i tot sistemes d’emmagatzematge al <strong>núvol</strong>.</p>
+<p><strong>Seguint el nostre exemple</strong>, en aquesta fase es recopilarien les valoracions dels clients i les ressenyes publicades en xarxes socials.</p>
+</li>
+<li>
+<p><strong>Processament de dades</strong></p>
+<p>En aquesta fase, la <strong>mineria de dades</strong> i la <strong>IA</strong>, com ja vam veure en la unitat anterior, tenen un paper fonamental, ja que s’encarreguen de <strong>preparar les dades per a l’anàlisi</strong>, així com de netejar-los per eliminar el soroll i realitzar transformacions necessàries per millorar-ne la qualitat, convertint-les en informació.</p>
+<p>Aquesta combinació de mineria de dades i IA per transformar la dada en informació dóna lloc a la disciplina <strong>data science</strong> o <strong>ciència de dades</strong>.</p>
+<p><strong>En el nostre exemple</strong>, el processament permetria classificar les diferents opinions en una escala que després seria analitzada.</p>
+</li>
+<li>
+<p><strong>Anàlisi i exploració</strong></p>
+<p>Les dades processades, ja convertides en informació, s’analitzen per intentar descobrir patrons, tendències i coneixements que ens permeten obtindre <em>insights</em> i facilitar la presa de decisions.</p>
+<p>La disciplina encarregada de transformar la informació en <em>insights</em> s’anomena <strong>data analytics</strong> (anàlisi de dades).</p>
+<p>Per ajudar a interpretar i analitzar la informació, aquesta pot presentar-se visualment a través de gràfics, taules o <strong>dashboards</strong> (quadres de control). Aquests últims són una eina extraordinària que s’ha estès pel seu ús habitual en espais de decisió i per al control en temps real.</p>
+<p><strong>Per exemple</strong>, podem disposar d’un gràfic que ens mostre els productes ordenats per criteris com els més valorats, més venuts o amb major nombre de ressenyes en xarxes socials, etc.</p>
+<p><img alt="Dashboard" src="../images/dashboard.jpg" /></p>
+</li>
+<li>
+<p><strong>Interpretació i presa de decisions</strong></p>
+<p>Amb l’ajuda de les ferramentes d’anàlisi, s’interpreta la informació en el seu context i s’arriba a conclusions que permeten prendre decisions estratègiques i accions concretes.</p>
+<p><strong>En el nostre exemple</strong>, si l’anàlisi indica que els productes pitjor valorats pels clients no inclouen una funda protectora, es podria plantejar incloure’n una sense cost per al client o aplicant un augment mínim en el preu.</p>
+</li>
+<li>
+<p><strong>Emmagatzematge i implementació de resultats</strong></p>
+<p>Una vegada preses les decisions, es passen a la pràctica. Tant la informació analitzada com les conclusions es guarden per a referència futura, permetent un aprenentatge continu i ajustos estratègics.</p>
+<p><strong>Seguint l’exemple</strong>, s’aplicaria la modificació d’acompanyar el producte amb una funda i aplicar la variació en el preu.</p>
+</li>
+<li>
+<p><strong>Monitorització de l’impacte</strong></p>
+<p>S’estableix un sistema de monitorització per avaluar l’efectivitat de les decisions preses i ajustar estratègies.
+En realitat, aquesta fase podria vincular-se amb la primera fase, la de generació de dades, produint així un <strong>cicle tancat</strong>, representatiu d’un procés d’observació contínua.</p>
+<p><strong>En el nostre exemple</strong>, es faria un seguiment específic de l’acceptació del nou producte en termes de vendes i valoracions dels clients.</p>
+</li>
+</ul>
+<p><img alt="Cicle de vida de la dada" src="../images/ciclo_vida_dato.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Vocabulari</p>
+<p><strong>Insight:</strong> visió o comprensió.
+En l’àmbit del <em>big data</em>, obtindre <em>insights</em> significa descobrir informació significativa que puga ser utilitzada per comprendre millor situacions, identificar oportunitats o prendre decisions més informades.</p>
+<p><strong>Dashboard:</strong> <em>quadre de control</em> o <em>tauler de control</em>.
+És una eina visual dissenyada per oferir una comprensió clara, ràpida i interactiva, generalment en temps real, dels indicadors clau de rendiment o altres dades rellevants per a la presa de decisions.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Power BI</p>
+<p><strong>Power BI</strong> és un servei de Microsoft que permet analitzar dades, oferir visualitzacions interactives i realitzar operacions d’intel·ligència empresarial amb una interfície senzilla per a l’usuari final.</p>
+<p>📊 <strong>Tauler de control Power BI</strong>
+<strong>Font:</strong> Microsoft Power BI
+🔗 <a href="https://www.microsoft.com/es-es/power-platform/products/power-bi">https://www.microsoft.com/es-es/power-platform/products/power-bi</a></p>
+<p><img alt="Power BI" src="../images/powerbi.jpg" /></p>
+</div>
+<h2 id="3-ciencia-de-dades-data-science"><strong>3. Ciència de dades (Data Science)</strong></h2>
+<p>La <strong>ciència de dades</strong>, o <em>data science</em>, és una <strong>disciplina que combina elements d’estadística, matemàtiques i programació per extraure coneixement i patrons de dades en diferents formes i convertir-los en informació valuosa</strong>.</p>
+<p>El procediment que segueix la <em>data science</em> per processar les dades és un <strong>cicle de vida tancat</strong>, en què es millora la qualitat de la dada amb cada iteració.
+Les fases del cicle són les següents:</p>
+<ul>
+<li>
+<p><strong>Comprensió del negoci</strong></p>
+<p>En aquesta fase, es tracta de <strong>comprendre el context, el problema i els objectius</strong> del projecte de <em>data science</em>.
+Cal definir clarament la pregunta o hipòtesi que es vol respondre, així com els criteris d’èxit i les limitacions del projecte.</p>
+<p>També s’ha d’identificar les parts interessades i establir una comunicació efectiva amb elles.</p>
+<p><strong>Un exemple</strong> d’aquesta fase seria definir l’objectiu de predir el preu de venda d’un actiu d’una empresa en funció de les seues característiques i determinar les mètriques d’avaluació i els requisits de negoci.</p>
+</li>
+<li>
+<p><strong>Mineria de dades</strong></p>
+<p>Ací es <strong>busquen i s’obtenen les dades necessàries</strong>, ja siguen de <strong>fonts internes o externes</strong>.
+Cal verificar-ne la qualitat, quantitat, rellevància i disponibilitat, així com els permisos i normes ètiques per al seu ús.
+També s’ha de documentar l’origen, format i significat de les dades.</p>
+<p><strong>Un exemple</strong> d’aquesta fase seria obtindre les dades de preus i característiques d’actius similars al nostre en pàgines de la competència, i emmagatzemar-les en un format adequat per a l’anàlisi.</p>
+</li>
+<li>
+<p><strong>Neteja de dades</strong></p>
+<p>Aquesta fase tracta de <strong>preparar les dades per al seu posterior anàlisi</strong>, corregint i eliminant valors erronis, faltants, duplicats o anòmals.
+Cal assegurar-se que les dades siguen consistents, completes i precises, i que no continguen soroll que puga afectar els resultats.</p>
+<p>També es realitzen <strong>transformacions per millorar la qualitat de la dada</strong>, normalitzant formats o convertint valors si és necessari.</p>
+<p><strong>Per exemple</strong>, en aquesta fase es reemplaçarien els valors faltants de les dades de característiques de l’actiu pels valors mitjans o predeterminats, i s’eliminarien els registres que tingueren problemes evidents.</p>
+</li>
+<li>
+<p><strong>Exploració de dades</strong></p>
+<p>En aquesta fase es realitza una <strong>anàlisi exploratòria de dades</strong>, utilitzant <strong>estadístiques descriptives i visualitzacions</strong> per entendre la seua distribució i relacions.
+S’identifiquen tendències, correlacions i patrons que poden ajudar a formular hipòtesis inicials, així com detectar possibles anomalies o valors extrems.</p>
+<p><strong>Un exemple</strong> d’aquesta fase seria crear un histograma dels preus de venda i calcular el coeficient de correlació entre el preu i una característica rellevant de l’actiu (com la superfície o l’antiguitat).</p>
+</li>
+<li>
+<p><strong>Enginyeria de característiques</strong></p>
+<p>Aquesta fase tracta de <strong>seleccionar, crear i transformar les variables més rellevants</strong> per al model.<br />
+Es poden utilitzar tècniques com la selecció de característiques, l’extracció de característiques o la creació de noves variables a partir de les existents.</p>
+<p>L’objectiu és millorar el rendiment del model i reduir la complexitat del problema.</p>
+<p><strong>Per exemple</strong>, en aquesta fase es podria crear una nova variable que combine diverses característiques de l’actiu (com la ubicació i la proximitat a serveis) per capturar millor el seu valor.</p>
+</li>
+<li>
+<p><strong>Modelat predictiu</strong></p>
+<p>Es tracta d’<strong>entrenar, avaluar i comparar diferents models d’aprenentatge automàtic o IA utilitzant les dades prèviament processades</strong>. S’han de dividir les dades en conjunts d’entrenament, validació i prova, i aplicar els algoritmes més adequats per al problema. També s’ha de mesurar el rendiment dels models utilitzant les mètriques definides en la fase d’entendre el negoci i seleccionar el millor model segons els criteris d’optimització.</p>
+<p><strong>Un exemple:</strong> entrenar un model de regressió lineal i un altre d’arbre de decisió, i comparar el seu error quadràtic mitjà en el conjunt de proves.</p>
+</li>
+<li>
+<p><strong>Visualització de dades</strong></p>
+<p>Els resultats i descobriments del projecte es comuniquen a les parts interessades mitjançant <strong>gràfics, taules, informes o <em>dashboards</em> interactius</strong>. S’ha de presentar el model seleccionat, el seu rendiment, la seua interpretació i les seues limitacions, així com les recomanacions o accions derivades de l’anàlisi. També s’ha de demanar <em>feedback</em> a les parts interessades i verificar si s’han complit els objectius i requisits del projecte.</p>
+<p><strong>Un exemple:</strong> crear un <em>dashboard</em> que mostre el preu real de l’actiu junt amb el calculat en la predicció i les variables més influents.</p>
+</li>
+</ul>
+<p><img alt="Cicle de vida del Data Science" src="../images/ciclo_data_science.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Vocabulari</p>
+<p>Una de les professions més demandades és la de <strong><em>data scientist</em></strong>, les competències de la qual combinen anàlisi de dades i programació:<br />
+🔗 <a href="https://www.youtube.com/watch?v=D6j3VS1L96o">Vídeo data scientist</a></p>
+</div>
+<h2 id="4-analisi-de-dades-data-analytics">4. Anàlisi de dades (<em>data analytics</em>)</h2>
+<p>L’<strong>anàlisi de dades</strong>, o <strong><em>data analytics</em></strong>, és una disciplina derivada de la <em>data science</em> el principal objectiu de la qual és <strong>transformar dades en informació per facilitar la presa de decisions</strong>. Utilitza ferramentes estadístiques i de <em>software</em> per arreplegar, processar i analitzar conjunts de dades per descobrir patrons o tendències que generen <em>insights</em> útils. En l’era de la informació, això és crucial per a les organitzacions que busquen obtindre avantatges competitives i optimitzar les seues operacions.</p>
+<p>Les diferències clau entre el <em>data analytics</em> i la <em>data science</em> es resumeixen en el quadre següent:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Data Science</strong></th>
+<th><strong>Data Analytics</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prediu el futur a partir de patrons del passat.</td>
+<td>Transforma les dades en informació significativa.</td>
+</tr>
+<tr>
+<td>Es proposen preguntes.</td>
+<td>Es formulen respostes.</td>
+</tr>
+<tr>
+<td>Utilitza la informació per predir els problemes futurs.</td>
+<td>Utilitza la informació per resoldre els problemes de negoci.</td>
+</tr>
+<tr>
+<td>Converteix les dades en informació.</td>
+<td>Converteix les dades en <em>insights</em>.</td>
+</tr>
+<tr>
+<td>Investiga solucions i crea estratègies per al que ocorrerà.</td>
+<td>Busca solucions a problemes identificats a través de dades variades i conegudes.</td>
+</tr>
+<tr>
+<td>Requereix habilitats de programació, matemàtiques, estadística i IA.</td>
+<td>Requereix habilitats més orientades al negoci i a la visualització de dades.</td>
+</tr>
+</tbody>
+</table>
+<p>Al igual que la <em>data science</em>, la disciplina del <em>data analytics</em> segueix un <strong>cicle de vida de dades</strong>, encara que el presentem de manera lineal, en la pràctica és iteratiu, ja que és comú que es requerisca tornar a una etapa anterior basant-se en els resultats i avaluacions que s’han realitzat en etapes prèvies.</p>
+<p>Comparat amb el cicle de vida de la <em>data science</em>, ací veurem que se subratlla molt més la creació de models predictius i més la descripció i comprensió de les dades.</p>
+<p>Les <strong>fases</strong> del cicle de vida del <em>data analytics</em> són les següents:</p>
+<ul>
+<li>
+<p><strong>1. Comprensió del problema de negoci</strong></p>
+<p>Abans de submergir-se en les dades, és crucial <strong>entendre el problema de negoci que es vol resoldre</strong>. Açò implica definir els objectius clarament.</p>
+<p><strong>Per exemple:</strong> en una empresa de recomanació de productes en línia, si volem augmentar els beneficis almenys un 10 %, cal determinar quins factors influeixen en el procés de compra, utilitzant tècniques com la mineria de dades o l’aprenentatge automàtic, segons el nivell de treball (ja siga inclòs en l’empresa o externalitzat) i ajustar les estratègies (informes, models de dades, etc.).</p>
+</li>
+<li>
+<p><strong>2. Comprensió de les dades</strong></p>
+<p>En aquesta fase, <strong>es recopilen dades inicials</strong> i <strong>s’identifiquen els requisits perquè siguen comprensibles</strong>. Es verifica la disponibilitat de les dades i la seua qualitat o estructura.</p>
+<p><strong>Per exemple:</strong> si tenim una empresa de comerç electrònic i volem millorar les recomanacions de determinats productes als clients, utilitzarem la recopilació de dades de l’historial de compres, comportament de navegació en la web i dades demogràfiques dels clients.</p>
+</li>
+<li>
+<p><strong>3. Preparació de les dades</strong></p>
+<p>Les dades es recullen de múltiples fonts i <strong>es netegen</strong> per assegurar la seua qualitat. Açò pot implicar l’eliminació de duplicats, el maneig de valors absents i la correcció d’errors. Després, es formategen per a una anàlisi coherent i es combinen o es mesclen si és necessari.</p>
+<p>En el cas del nostre <strong>exemple</strong>, es podrien netejar les dades de navegació i combinar-les amb l’historial de compres per crear un conjunt de dades unificat.</p>
+</li>
+<li>
+<p><strong>4. Anàlisi exploratòria i modelatge</strong></p>
+<p>Ací es desenvolupa una <strong>metodologia per analitzar les dades</strong>. Es determinen variables clau i es construeixen models estadístics o d’aprenentatge automàtic per al seu estudi.</p>
+<p>En l’empresa de l’<strong>exemple</strong>, es podrien utilitzar algorismes de filtratge col·laboratiu per recomanar productes basats en les preferències d’usuaris similars.</p>
+</li>
+<li>
+<p><strong>5. Validació</strong></p>
+<p>Una vegada s’ha construït el model, s’avaluen els resultats. Açò pot implicar l’aplicació de <strong>tècniques estadístiques</strong> per validar la fiabilitat i la precisió del model. Es revisa el procés i es determinen els següents passos. Si els resultats no són vàlids, pot ser necessari tornar a passos anteriors.</p>
+<p>En el nostre <strong>exemple</strong>, açò significaria verificar si les recomanacions del model coincideixen amb les compres posteriors dels usuaris.</p>
+</li>
+<li>
+<p><strong>6. Visualització i presentació</strong></p>
+<p>Finalment, es comuniquen els resultats. S’elegeix la millor manera de presentar els descobriments a les parts interessades, per exemple, mitjançant <strong><em>dashboards</em></strong> interactius o <strong>presentacions</strong>. Es conta una història convincent sobre els resultats i es fan recomanacions basades en els descobriments de l’anàlisi.</p>
+<p>Per a l’<strong>exemple</strong> de l’empresa de comerç electrònic, això podria resultar en una presentació que demostre com les recomanacions personalitzades incrementen les vendes.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Navega</p>
+<p>Una de les professions més demandades hui en dia és la de <em>data analyst</em>.
+Aquest perfil analitza enormes quantitats de dades per millorar processos i prendre decisions estratègiques.<br />
+En aquest vídeo de Datademia podràs entendre què fa un <em>data analyst</em>: 🔗 <a href="https://www.youtube.com/watch?v=R5rHM07zayE">Vídeo</a></p>
+</div>
+<h2 id="5-emmagatzematge-de-big-data">5. Emmagatzematge de <em>Big Data</em></h2>
+<p>En l’actualitat, les dades es generen a una velocitat sense precedents i les empreses s’enfronten al repte d’<strong>emmagatzemar i gestionar eficientment un volum massiu d’informació</strong>. La solució a aquest desafiament resideix en el concepte <strong>d’emmagatzematge de dades per nivells</strong>.</p>
+<p>L’emmagatzematge de dades per nivells és una tècnica avançada que classifica les dades segons la seua importància i freqüència d’ús, assignant-los el mitjà d’emmagatzematge més adequat i rendible. Es basa en la premissa que no totes les dades tenen el mateix valor ni requereixen el mateix nivell d’accés.</p>
+<p>Els nivells típics d’aquest model d’emmagatzematge són:</p>
+<ul>
+<li><strong>Nivell crític (dades de valor alt):</strong>
+  Són dades essencials per a les operacions diàries i decisions estratègiques que requereixen accés immediat.</li>
+</ul>
+<p>Per aquest motiu, s’emmagatzemen en solucions d’alta velocitat com <strong>discos SSD</strong> o <strong>memòries RAM</strong>, que, encara que més costoses, ofereixen l’agilitat necessària per a l’anàlisi en temps real o transaccions comercials urgents.</p>
+<ul>
+<li><strong>Nivell temperat (dades de valor mitjà):</strong>
+  Aquesta categoria inclou dades que, encara que importants, són consultades amb menys freqüència.</li>
+</ul>
+<p>Poden emmagatzemar-se en sistemes tradicionals com <strong>discos HDD</strong>, que proporcionen un bon equilibri entre cost i rendiment, sent adequats per a informes periòdics o anàlisis de tendències.</p>
+<ul>
+<li><strong>Nivell fred (dades de valor baix):</strong>
+  Les dades que s’han de conservar per <strong>raons legals, històriques o de compliment, però que s’utilitzen poc</strong>, es classifiquen com a <strong>fredes</strong>.</li>
+</ul>
+<p>Aquestes s’allotgen en mitjans d’emmagatzematge de <strong>baix cost i baixa velocitat</strong>, com <strong>cintes magnètiques</strong> o sistemes de núvol amb costos mínims.</p>
+<p>La implementació del model de nivells comporta nombrosos avantatges, com ara:</p>
+<ul>
+<li>
+<p><strong>Reducció de costos:</strong>
+  Utilitzar recursos d’emmagatzematge d’acord amb el valor i la freqüència de les dades permet reduir significativament els costos associats.</p>
+</li>
+<li>
+<p><strong>Millora en l’eficiència operativa:</strong>
+  L’accés més ràpid a les dades crítiques millora el rendiment de les aplicacions i la productivitat de les empreses.</p>
+</li>
+<li>
+<p><strong>Flexibilitat i adaptabilitat:</strong>
+  La capacitat per moure dades entre nivells segons la seua rellevància facilita que les empreses s’adapten de manera dinàmica a les seues necessitats canviants.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Vocabulari</p>
+<ul>
+<li><strong>SSD:</strong> <em>Solid State Disk</em>, o disc d’estat sòlid.</li>
+<li><strong>HDD:</strong> <em>Hard Disk Drive</em>, o unitat de disc dur (disc dur «tradicional»).<br />
+Els SSD són solucions d’alta velocitat, encara que més costoses, mentre que els HDD ofereixen més capacitat a menor cost.</li>
+</ul>
+</div>
+<h2 id="6-aplicacio-del-big-data-en-les-empreses">6. Aplicació del <em>big data</em> en les empreses</h2>
+<p>L’aplicació del <em>big data</em> en les empreses ha desencadenat una revolució en la manera com es gestionen i utilitzen les dades.</p>
+<p>A continuació, explorarem algunes de les àrees més destacades on les empreses apliquen <em>big data</em>, destacant exemples que il·lustren la influència transformadora d’aquesta tecnologia habilitadora.</p>
+<h3 id="analisi-de-clients">Anàlisi de clients</h3>
+<p>L’anàlisi de clients a través del <em>big data</em> ajuda les empreses a comprendre les <strong>preferències i comportaments dels seus clients</strong>, permetent estratègies de <em>marketing</em> més efectives i personalitzades.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Recomanacions personalitzades de productes i serveis:</strong> plataformes com <strong>Netflix o Amazon</strong> utilitzen algoritmes de recomanació basats en <em>big data</em> per analitzar l’historial de visualització i oferir recomanacions personalitzades als usuaris.</li>
+<li><strong>Segmentació de clients en comerç electrònic:</strong> les empreses de comerç electrònic utilitzen anàlisi de <em>big data</em> per segmentar els clients segons el seu comportament de compra, la qual cosa facilita el disseny i implementació de campanyes de <em>marketing</em> per a cada segment.</li>
+</ul>
+<h3 id="optimitzacio-doperacions">Optimització d’operacions</h3>
+<p>L’optimització d’operacions a través del <em>big data</em> implica analitzar grans conjunts de dades per <strong>millorar l’eficiència i la productivitat</strong> en la cadena de subministrament, la gestió d’inventaris i la planificació de la demanda, sent una pràctica molt comuna en empreses que es dediquen al comerç o que formen part de cadenes logístiques.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Gestió de la demanda:</strong> les cadenes de botigues utilitzen <em>big data</em> per analitzar patrons de compra, preveure la demanda i optimitzar els nivells d’inventari, reduint costos i millorant la disponibilitat de productes.</li>
+</ul>
+<h3 id="presa-de-decisions-basada-en-dades">Presa de decisions basada en dades</h3>
+<p>Les empreses utilitzen eines i tècniques de <em>big data</em> per donar suport a la presa de decisions informades. La presa de decisions informades es basa en l’anàlisi de grans conjunts de dades per <strong>identificar patrons i tendències</strong>.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Personalització de serveis financers:</strong> en el sector financer, les institucions utilitzen <em>big data</em> per avaluar riscos i prendre decisions sobre inversions i préstecs.</li>
+<li><strong>Anàlisi de mercat en temps real:</strong> en el comerç al detall i la publicitat, s’utilitzen eines d’anàlisi en temps real per ajustar estratègies de <em>marketing</em> segons la demanda i també segons la competència.</li>
+</ul>
+<h3 id="marketing-personalitzat"><em>Marketing</em> personalitzat</h3>
+<p>El <em>big data</em> s’utilitza per <strong>segmentar audiències</strong>, <strong>personalitzar campanyes publicitàries</strong> i <strong>mesurar el retorn de la inversió</strong>.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Publicitat digital segmentada:</strong> les plataformes de publicitat en línia utilitzen dades demogràfiques, comportaments de navegació i preferències de compra per dirigir anuncis a segments d’audiència específics.</li>
+<li><strong>Programes de fidelització personalitzats:</strong> les empreses implementen programes basats en <em>big data</em> per recompensar els clients de manera personalitzada segons el seu historial de compres i preferències.</li>
+</ul>
+<h3 id="prevencio-del-frau-i-seguretat">Prevenció del frau i seguretat</h3>
+<p>L’ús del <em>big data</em> permet <strong>detectar patrons anòmals</strong> per part dels usuaris en l’ús de plataformes i serveis, i així prevenir fraus, millorant la seguretat.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Detecció de fraus financers:</strong> els bancs utilitzen anàlisis de <em>big data</em> per monitorar transaccions i detectar patrons inusuals que podrien indicar fraus amb targetes de crèdit.</li>
+</ul>
+<h3 id="salut">Salut</h3>
+<p>En el sector de la salut, el <em>big data</em> s’aplica a l’anàlisi de dades en històries clíniques, investigació genòmica i descobriment de medicaments. També té un ús intensiu en la detecció precoç de malalties.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Historials mèdics electrònics:</strong> alguns hospitals utilitzen aquest tipus de dades per a millorar l’atenció mèdica personalitzada i la presa de decisions clíniques.</li>
+<li><strong>Investigació genòmica:</strong> la investigació genòmica utilitza <em>big data</em> per analitzar grans conjunts de dades genètiques, accelerant el descobriment de gens associats a malalties i facilitant el desenvolupament de teràpies personalitzades.</li>
+</ul>
+<h3 id="recursos-humans-i-gestio-del-talent">Recursos humans i gestió del talent</h3>
+<p>El <em>big data</em> s’aplica en la gestió dels recursos humans per analitzar dades relacionades amb el <strong>rendiment dels empleats</strong>, la <strong>satisfacció laboral</strong> i la <strong>retenció del talent</strong>.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Anàlisi de rendiment:</strong> ús de dades per avaluar el rendiment individual i col·lectiu dels empleats, identificar àrees de millora i facilitar el desenvolupament professional.</li>
+<li><strong>Models predictius de rotació:</strong> ús d’algoritmes de <em>big data</em> per predir la probabilitat que un empleat abandone l’empresa, permetent estratègies proactives de retenció.</li>
+</ul>
+<h3 id="analisi-de-text-i-sentiment">Anàlisi de text i sentiment</h3>
+<p>Les empreses utilitzen tècniques de <strong>processament del llenguatge natural (NLP)</strong> per analitzar grans volums de text —com comentaris de clients, revisions en xarxes socials i comunicacions internes.</p>
+<p><strong>Exemples:</strong></p>
+<ul>
+<li><strong>Anàlisi de sentiment en xarxes socials:</strong> les eines de <em>big data</em> poden processar comentaris en plataformes socials per avaluar la percepció pública d’una marca o producte i prendre mesures correctives si és necessari.</li>
+<li><strong>Anàlisi d’opinions de productes:</strong> el processament de comentaris de clients en llocs de comerç electrònic permet entendre millor les preferències dels consumidors i millorar productes i serveis.</li>
+</ul>
+<hr />
+<h4 id="61-casos-dexit">6.1. Casos d’èxit</h4>
+<p>A continuació, veurem alguns exemples reals d’empreses que han aplicat amb èxit el <em>big data</em> per millorar els seus processos i resultats.</p>
+<ul>
+<li><strong>Spotify</strong></li>
+</ul>
+<p>Spotify aplica <em>big data</em> i algoritmes d’aprenentatge automàtic per <strong>personalitzar les experiències auditives dels seus usuaris</strong> a través de llistes de reproducció com <em>Descobriment setmanal</em> i <em>Radar de novetats</em>.</p>
+<ul>
+<li><strong>Zara</strong></li>
+</ul>
+<p>Zara utilitza <em>big data</em> per <strong>optimitzar la seua cadena de subministrament i la gestió d’inventaris</strong>.
+Analitza dades en temps real sobre les tendències de moda, les vendes de productes i el comportament dels clients per prendre decisions ràpides sobre la producció i distribució de les seues peces.</p>
+<ul>
+<li><strong>Starbucks</strong></li>
+</ul>
+<p>Starbucks utilitza <em>big data</em> per <strong>millorar l’experiència del client i optimitzar la ubicació dels seus establiments</strong>.
+Analitza dades demogràfiques, preferències dels clients i patrons de trànsit per determinar el millor lloc per a noves botigues.</p>
+<ul>
+<li><strong>UPS</strong></li>
+</ul>
+<p>L’empresa de missatgeria <strong>UPS</strong> utilitza <em>big data</em> per <strong>optimitzar les seues rutes de repartiment</strong>.
+A través de l’anàlisi de grans volums de dades, incloent-hi condicions del trànsit, patrons meteorològics i ubicacions de lliurament, UPS pot determinar les rutes més eficients per reduir el consum de combustible i millorar la puntualitat en les entregues.</p>
+<ul>
+<li><strong>Boeing</strong></li>
+</ul>
+<p>Boeing utilitza <em>big data</em> per <strong>millorar l’eficiència de les seues operacions i la seguretat dels seus avions</strong>.
+Mitjançant l’anàlisi de dades generades pels sensors dels avions, Boeing pot realitzar manteniment predictiu, anticipar fallades i reduir els costos associats a les reparacions no planificades.</p>
+<ul>
+<li><strong>American Express</strong></li>
+</ul>
+<p>American Express utilitza <em>big data</em> per <strong>detectar fraus i personalitzar serveis financers</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Navega</p>
+<p>L’anàlisi de sentiments en xarxes socials és una poderosa eina per a les marques, ja que permet entendre <strong>l’actitud i la fidelitat dels clients</strong> cap als seus productes.</p>
+<p>En aquest article de <strong>YouScan</strong> podràs veure exemples pràctics de com <strong>Coca-Cola</strong> realitza una anàlisi de sentiment a partir de publicacions en xarxes socials:<br />
+<a href="https://bit.ly/3UMBFka">Análisi de sentiment, YouScan</a></p>
+</div>
+<h2 id="7-seguretat-de-les-dades">7. Seguretat de les dades</h2>
+<p>Amb l’augment exponencial de la quantitat de dades generades i emmagatzemades, la <strong>seguretat de les dades</strong> s’ha convertit en una preocupació crítica per a les organitzacions de tot el món.</p>
+<h3 id="71-seguretat-de-la-informacio">7.1 Seguretat de la informació</h3>
+<p>Per entendre com protegir les dades, primer cal conèixer primerament els pilars fonamentals de la seguretat de la informació, coneguts com a <strong>CIA Triad</strong> (Confidencialitat, Integritat i Disponibilitat):</p>
+<p><img alt="CIA Triad" src="../images/cia.png" /></p>
+<ul>
+<li><strong>Confidencialitat:</strong> assegura que la informació només siga accessible per a les persones autoritzades. Això implica l’ús de tècniques com:<ul>
+<li><strong>Xifratge de dades</strong>: la informació es codifica per evitar l’accés no autoritzat.</li>
+<li><strong>Control d’accés</strong>: es defineixen permisos i rols per limitar l’accés a les dades sensibles.</li>
+<li><strong>Autenticació</strong>: es verifica la identitat dels usuaris abans d’accedir a la informació.</li>
+</ul>
+</li>
+<li><strong>Integritat:</strong> garanteix que la informació siga precisa i completa, i que no haja estat alterada de manera no autoritzada. Això es pot aconseguir mitjançant:<ul>
+<li><strong>Controls criptogràfics</strong>: com ara funcions hash que permeten verificar que les dades no han estat modificades.</li>
+<li><strong>Registres d’auditoria</strong>: es mantenen registres de totes les operacions realitzades sobre les dades per detectar qualsevol alteració no autoritzada.</li>
+<li><strong>Seguretat física i lògica</strong>: es protegeixen els sistemes i les xarxes per evitar accessos no autoritzats que puguen comprometre la integritat de les dades.</li>
+</ul>
+</li>
+<li><strong>Disponibilitat:</strong> assegura que la informació estiga accessible quan siga necessària per als usuaris autoritzats. Això implica:<ul>
+<li><strong>Sistemes de recuperació davant desastres</strong>: es desenvolupen plans per restaurar l’accés a les dades en cas de fallada del sistema o desastre.</li>
+<li><strong>Redundància i còpies de seguretat</strong>: es mantenen còpies de les dades en ubicacions diferents per garantir la seva disponibilitat en cas de pèrdua o corrupció.</li>
+</ul>
+</li>
+</ul>
+<h3 id="72-la-privacitat-de-la-informacio">7.2 La privacitat de la informació</h3>
+<p>La <strong>privacitat de la informació</strong> es refereix a la protecció de les dades personals i sensibles dels individus contra l’accés no autoritzat i l’ús indegut.</p>
+<p>La protecció de dades en Espanya i Europa està regulada principalment pel <strong>Reglament General de Protecció de Dades (RGPD)</strong>, que estableix les normes per al tractament i la protecció de les dades personals.</p>
+<p>Les principals característiques del RGPD són:</p>
+<ul>
+<li><strong>Consentiment explícit:</strong> les organitzacions han d’obtenir el consentiment clar i explícit dels individus abans de recopilar i utilitzar les seues dades personals.</li>
+<li><strong>Dret d’accés i rectificació:</strong> els individus tenen dret a accedir a les seues dades personals i a sol·licitar la rectificació de qualsevol informació incorrecta.</li>
+<li><strong>Dret a l’oblit:</strong> els individus poden sol·licitar la supressió de les seues dades personals en determinades circumstàncies.</li>
+<li><strong>Notificació de violacions de dades:</strong> les organitzacions han de notificar les autoritats de protecció de dades i els individus afectats en cas de violació de dades personals.</li>
+<li><strong>Responsabilitat:</strong> les organitzacions són responsables de complir amb el RGPD i han de demostrar la seua conformitat amb les normes establertes.</li>
+</ul>
+<p>També s'aplica la <strong>Llei Orgànica de Protecció de Dades i Garantia dels Drets Digitals (LOPDGDD)</strong>, que complementa el RGPD a Espanya. Aquesta llei estableix disposicions específiques per a la protecció de dades personals i els drets digitals dels ciutadans espanyols:</p>
+<ul>
+<li><strong>Drets digitals:</strong> la LOPDGDD reconeix i protegeix els drets digitals dels ciutadans, com ara el dret a la intimitat en les comunicacions electròniques i el dret a la protecció de dades personals en l’àmbit digital.</li>
+<li><strong>Autoritat de control:</strong> la LOPDGDD estableix l’Agència Espanyola de Protecció de Dades (AEPD) com a autoritat de control responsable de supervisar el compliment de la normativa de protecció de dades a Espanya.</li>
+<li><strong>Sancions:</strong> la LOPDGDD estableix sancions específiques per a les infraccions de la normativa de protecció de dades, que poden incloure multes econòmiques i altres mesures correctives.</li>
+</ul>
+<h3 id="73-emmagatzematge-segur-de-dades">7.3 Emmagatzematge segur de dades</h3>
+<p>L’emmagatzematge segur de dades és fonamental per protegir la informació sensible i garantir la seva integritat i confidencialitat. Algunes pràctiques recomanades per a l’emmagatzematge segur de dades inclouen:</p>
+<ul>
+<li><strong>Còpies de seguretat</strong>: realitzar còpies de seguretat regulars de les dades i emmagatzemar-les en ubicacions segures i separades per protegir-les contra pèrdues o corrupcions.</li>
+<li><strong>Xifratge de dades</strong>: utilitzar tècniques de xifratge per protegir les dades emmagatzemades, assegurant que només els usuaris autoritzats puguen accedir-hi.</li>
+<li><strong>Esborrat segur</strong>: implementar procediments per esborrar dades de manera segura quan ja no siguen necessàries, evitant la recuperació no autoritzada.</li>
+</ul>
+<div class="admonition infor">
+<p class="admonition-title">Regla 3-2-1</p>
+<p>Una pràctica recomanada per a la gestió de còpies de seguretat és la <strong>regla 3-2-1</strong>, que consisteix en:</p>
+<ul>
+<li>Mantenir almenys <strong>3 còpies</strong> de les dades.</li>
+<li>Emmagatzemar les còpies en <strong>2 tipus diferents de mitjans d’emmagatzematge</strong>. Per exemple, un disc dur extern i un servei d’emmagatzematge al núvol.</li>
+<li>Guardar <strong>1 còpia fora del lloc</strong> per protegir-la contra desastres locals. </li>
+</ul>
+<p><img alt="Regla 3-2-1" src="../images/regla-3-2-1-.png" /></p>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
