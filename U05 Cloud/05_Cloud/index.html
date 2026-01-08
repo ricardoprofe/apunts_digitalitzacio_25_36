@@ -1,0 +1,1631 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Ricardo Sánchez">
+      
+      
+      
+        <link rel="prev" href="../../U04_Big_Data/Activitats%20U4/">
+      
+      
+        <link rel="next" href="../Activitats%20U5/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
+    
+    
+      
+        <title>Unitat 05. Computació en el núvol - Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9f615399.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.649f08f9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/my.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="amber">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#computacio-en-el-nuvol" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-header__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unitat 05. Computació en el núvol
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Digitalització aplicada al sistema productiu - Desenvolupament d&#39;aplicacions multimedia" class="md-nav__button md-logo" aria-label="Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia" data-md-component="logo">
+      
+  <img src="../../stylesheets/logo_me_blanc.png" alt="logo">
+
+    </a>
+    Digitalització aplicada al sistema productiu - Desenvolupament d'aplicacions multimedia
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digitalització aplicada als sectors productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U01 Introduccio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            U01 Introduccio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/01_Introduccio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 01. Digitalització en els sistemes productius
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U01_Introduccio/Activitats%20U1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 1. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U02 THD
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            U02 THD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/02_THD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 02. Caracterització de tecnologíes habilitadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U02_THD/Activitats%20U2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 2. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U03 IA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            U03 IA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U03_IA/03_IA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 03. Intel·ligència artificial (IA)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U03_IA/Activitats%20U3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 3. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U04 Big Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            U04 Big Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U04_Big_Data/04_Big_Data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 04. Big Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../U04_Big_Data/Activitats%20U4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 04. Big Data. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    U05 Cloud
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            U05 Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unitat 05. Computació en el núvol
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 05. Computació en el núvol
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-antecedents" class="md-nav__link">
+    1. Antecedents
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Antecedents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-definicio" class="md-nav__link">
+    1.2. Definició
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-models-de-nuvol" class="md-nav__link">
+    2. Models de núvol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-serveis-en-el-nuvol" class="md-nav__link">
+    3. Serveis en el núvol
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Serveis en el núvol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-infraestructura-com-a-servei-iaas" class="md-nav__link">
+    3.1. Infraestructura com a servei (IaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-plataforma-com-a-servei-paas" class="md-nav__link">
+    3.2. Plataforma com a servei (PaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-software-com-a-servei-saas" class="md-nav__link">
+    3.3. Software com a servei (SaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-el-model-de-tot-com-a-servei-xaas" class="md-nav__link">
+    3.4. El model de tot com a servei (XaaS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-possibilitats-de-feina-en-el-nuvol" class="md-nav__link">
+    4. Possibilitats de feina en el núvol
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Possibilitats de feina en el núvol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-solucions-utilitzant-el-model-iaas" class="md-nav__link">
+    4.1. Solucions utilitzant el model IaaS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-solucions-utilitzant-el-model-paas" class="md-nav__link">
+    4.2. Solucions utilitzant el model PaaS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-solucions-utilitzant-el-model-saas" class="md-nav__link">
+    4.3. Solucions utilitzant el model SaaS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-edge-computing" class="md-nav__link">
+    5. Edge computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fog-computing-i-mist-computing" class="md-nav__link">
+    6. Fog computing i mist computing
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Fog computing i mist computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-fog-computing" class="md-nav__link">
+    6.1. Fog computing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-mist-computing" class="md-nav__link">
+    6.2. Mist computing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-eleccio-del-model-de-computacio" class="md-nav__link">
+    7. Elecció del model de computació
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-us-del-nuvol-i-la-rendibilitat-de-lempresa" class="md-nav__link">
+    8. Ús del núvol i la rendibilitat de l’empresa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Activitats%20U5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unitat 05. Computació en el núvol. Activitats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-antecedents" class="md-nav__link">
+    1. Antecedents
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Antecedents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#12-definicio" class="md-nav__link">
+    1.2. Definició
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-models-de-nuvol" class="md-nav__link">
+    2. Models de núvol
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-serveis-en-el-nuvol" class="md-nav__link">
+    3. Serveis en el núvol
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Serveis en el núvol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-infraestructura-com-a-servei-iaas" class="md-nav__link">
+    3.1. Infraestructura com a servei (IaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-plataforma-com-a-servei-paas" class="md-nav__link">
+    3.2. Plataforma com a servei (PaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-software-com-a-servei-saas" class="md-nav__link">
+    3.3. Software com a servei (SaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-el-model-de-tot-com-a-servei-xaas" class="md-nav__link">
+    3.4. El model de tot com a servei (XaaS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-possibilitats-de-feina-en-el-nuvol" class="md-nav__link">
+    4. Possibilitats de feina en el núvol
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Possibilitats de feina en el núvol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-solucions-utilitzant-el-model-iaas" class="md-nav__link">
+    4.1. Solucions utilitzant el model IaaS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-solucions-utilitzant-el-model-paas" class="md-nav__link">
+    4.2. Solucions utilitzant el model PaaS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-solucions-utilitzant-el-model-saas" class="md-nav__link">
+    4.3. Solucions utilitzant el model SaaS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-edge-computing" class="md-nav__link">
+    5. Edge computing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-fog-computing-i-mist-computing" class="md-nav__link">
+    6. Fog computing i mist computing
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Fog computing i mist computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-fog-computing" class="md-nav__link">
+    6.1. Fog computing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-mist-computing" class="md-nav__link">
+    6.2. Mist computing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-eleccio-del-model-de-computacio" class="md-nav__link">
+    7. Elecció del model de computació
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-us-del-nuvol-i-la-rendibilitat-de-lempresa" class="md-nav__link">
+    8. Ús del núvol i la rendibilitat de l’empresa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="computacio-en-el-nuvol">Computació en el núvol</h1>
+<h2 id="1-antecedents">1. Antecedents</h2>
+<p>El desenvolupament de la computació en el núvol va començar a <strong>finals dels anys seixanta</strong>. Les empreses començaren a utilitzar ordinadors centrals (anomenats <em>mainframes</em>). Que cada usuari tinguera el seu propi equip era massa costós, així que es va desenvolupar un sistema de <strong>processament de temps compartit</strong>, que permetia a diversos usuaris accedir i utilitzar recursos informàtics centralitzats. Esta idea representa el primer ús de recursos informàtics compartits, que formen la base de la computació en el núvol moderna.</p>
+<p>En la dècada dels 2000, amb l’aparició d’internet, la computació en el núvol començà a prendre una forma més tangible amb l’arribada de les <strong>màquines virtuals</strong>, que permetien als usuaris executar múltiples sistemes informàtics en una única configuració física.</p>
+<p>En les dècades dels setanta i huitanta, les empreses tecnològiques referents (Microsoft, Apple i IBM) desenvolupen tecnologies que milloraren els entorns de núvol i ampliaren l’ús de servidors en el núvol i serveis d’allotjament de servidors, però no és fins a 1999 quan l’empresa <strong><em>Salesforce</em></strong> es convertí en la primera en oferir aplicacions empresarials a través de la web.</p>
+<p>En 2006, Amazon llança <strong>Amazon Web Services (AWS)</strong>, que oferix serveis com computació en el núvol i emmagatzematge de dades. Este moviment inicial d’Amazon marca el començament d’una nova era en la informàtica, donant peu a una competència intensa en el sector. Microsoft introdueix <strong>Azure</strong> en 2010, oferint una àmplia gamma de serveis en el núvol, incloent-hi solucions de computació, anàlisi, emmagatzematge i bases de dades. Google irromp en 2011 amb el llançament de <strong>Google Cloud Platform</strong>, proporcionant serveis similars als de AWS i Azure, però destacant en la integració de les seues pròpies tecnologies de búsqueda i anàlisi de dades.</p>
+<h3 id="12-definicio">1.2. Definició</h3>
+<p>El terme <strong>computació en el núvol</strong> (o <strong>cloud computing</strong>), l’analogia del núvol prové del món dels diagrames de xarxa, on sol representar-se Internet amb un núvol. Este concepte abstracte encapsula una idea bàsica que dóna suport a la definició: <strong>la disponibilitat de recursos i serveis informàtics a través de la xarxa gràcies a la connexió a internet</strong>.</p>
+<p>Tal com hem comentat, la computació en el núvol no implica que la informació i els recursos informàtics es troben en el dispositiu de l’usuari, sinó que estes es gestionen i emmagatzemen a través d’un servidor remot. Això permet accedir a una varietat de serveis i recursos, sense la preocupació de mantindre el maquinari o el programari localment.</p>
+<h2 id="2-models-de-nuvol">2. Models de núvol</h2>
+<p>Com ja hem dit, la computació en el núvol permet disposar d’una àmplia varietat de recursos.</p>
+<p>Quan es decideix utilitzar el núvol en un entorn, ja siga personal o professional, és convenient conéixer que existeixen diferents models de núvol, dels quals podríem dir, de forma molt simplificada, que es diferencien per la quantitat de recursos que es posen a la nostra disposició.</p>
+<ul>
+<li>
+<p><strong>Núvol públic</strong></p>
+<p>Un <strong>núvol públic</strong> és un <strong>conjunt de recursos proporcionats íntegrament per una entitat externa</strong>. Estos recursos, que estan derivats d'una infraestructura de hardware que pertany a qui presta este model de núvol, es posen a disposició dels usuaris (particulars o empreses) a través d’una interfície d’autoservei automatitzada.</p>
+<p>Els serveis en un núvol públic estan disponibles per a qualsevol usuari amb connexió a internet, el que permet el <strong>accés des de qualsevol ubicació</strong>.</p>
+<p>D’altra banda, es tracta d’un model que facilita el <strong>desplegament ràpid</strong> d’aplicacions i serveis, ja que el proveïdor sol oferir les capacitats preconfigurades i llestes per a usar.</p>
+<p>Una de les principals avantatges d’este model és la <strong>escalabilitat a demanda</strong>; és a dir, la capacitat d’escalar (augmentar o reduir) els recursos de manera dinàmica segons les necessitats de l’usuari, ja siga la capacitat de processament, d’emmagatzematge o qualsevol altre servei.</p>
+<p>Es basen en un <strong>model de pagament per ús</strong>, en el qual els usuaris paguen només pels recursos que consumeixen durant un període específic. Esto reduïx les despeses de manteniment de la infraestructura i permet una major eficiència financera. A més, es gestionen tots els recursos, com ara potència de càlcul, emmagatzematge, anàlisi de dades, serveis d’intel·ligència artificial i molts altres, els quals es poden escalar i optimitzar costos.</p>
+<p>El proveïdor del núvol públic s’encarrega del manteniment de la infraestructura i les actualitzacions de software, alliberant l’usuari d’estes responsabilitats.</p>
+<p>Els principals proveïdors del model de núvol públic són <strong>AWS</strong>, <strong>Microsoft Azure</strong> i <strong>Google Cloud Platform (GCP)</strong>.</p>
+</li>
+<li>
+<p><strong>Núvol privat</strong></p>
+<p>Un <strong>núvol privat és utilitzat per una única organització</strong> i proporciona un major control sobre la infraestructura i els recursos.</p>
+<p>En este model, la empresa és responsable de tots els costos associats: dotació de personal per a la gestió i manteniment, adquisició i manteniment de la infraestructura...</p>
+<p>No obstant això, existeixen proveïdors que ofereixen núvols privats com a servei gestionat.</p>
+<p>Este tipus de servei permet a les empreses crear i operar un núvol privat implementat, configurat i administrat per personal especialitzat sense haver de gestionar elles mateixes el núvol privat diàriament.</p>
+<p>Els núvols privats permeten una major personalització de la infraestructura per a satisfer requisits específics de l’organització, el que facilita l’adaptació a polítiques internes i regulacions.</p>
+<p>Els principals proveïdors de núvol privats són <strong>VMware</strong> i <strong>OpenStack</strong>. També existeixen sol·lucions lliures com <strong>OwnCloud</strong> o <strong>Proxmox</strong>.</p>
+</li>
+<li>
+<p><strong>Núvol híbrid</strong></p>
+<p>Un <strong>núvol híbrid</strong> és una <strong>infraestructura que combina recursos i serveis de núvols públiques i privades, permetent la transferència de dades i aplicacions entre elles</strong>, segons les necessitats de l’usuari.</p>
+<p>Este model aprofita el millor d'ambdós mons; així, per exemple, una empresa pot allotjar dades crítiques en entorns privats per controlar el compliment de regulacions i mantindre la seguretat dels recursos directament, i a la vegada, proporcionar flexibilitat per escalar recursos i distribuir la càrrega de treball entre entorns públics segons siga necessari.</p>
+</li>
+</ul>
+<p><img alt="Núvol híbrid" src="../images/hybrid-cloud.png" /></p>
+<ul>
+<li>
+<p><strong>Model multinúvol</strong></p>
+<p>El <strong>model multinúvol</strong> implica la <strong>integració de dos o més núvols del mateix tipus (pública o privada) que es creen per distintes proveïdors</strong>, en lloc de dependre exclusivament de un proveïdor.</p>
+<p>La característica diferenciadora, sobre tot del model de núvol híbrida, és la diversitat de proveïdors. Així, una empresa pot seleccionar els serveis que més li interessen de cada proveïdor i interconnectar-los, la qual cosa aprofita les fortaleses particulars de cada proveïdor i reduïx la dependència.</p>
+</li>
+</ul>
+<p><img alt="Model multinúvol" src="../images/multicloud.png" /></p>
+<p><strong>Taula resum:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th><strong>Núvol pública</strong></th>
+<th><strong>Núvol privada</strong></th>
+<th><strong>Núvol híbrida</strong></th>
+<th><strong>Multinuvol</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accés a recursos</strong></td>
+<td>Obert al públic en general</td>
+<td>Restringit a una única organització</td>
+<td>Combinació d’accés públic i privat</td>
+<td>Utilitza serveis de múltiples proveïdors simultàniament</td>
+</tr>
+<tr>
+<td><strong>Control i seguretat</strong></td>
+<td>Menys control, major dependència del proveïdor</td>
+<td>Control total sobre la infraestructura i els recursos</td>
+<td>Major control i seguretat en la núvol privada</td>
+<td>Control i seguretat distribuïts entre múltiples proveïdors</td>
+</tr>
+<tr>
+<td><strong>Flexibilitat i escalabilitat</strong></td>
+<td>Altament escalable i flexible</td>
+<td>Escalabilitat i flexibilitat adaptades a requisits interns</td>
+<td>Escalabilitat dinàmica, adaptabilitat a demandes</td>
+<td>Flexibilitat per a elegir serveis òptims de diferents proveïdors</td>
+</tr>
+<tr>
+<td><strong>Costos i model de pagament</strong></td>
+<td>Pagament per ús, model de costos variable</td>
+<td>Costos més previsibles i generalment més alts</td>
+<td>Variables, costos dependents de cada entorn</td>
+<td>Optimització de costos en elegir serveis de diferents proveïdors</td>
+</tr>
+<tr>
+<td><strong>Implementació i manteniment</strong></td>
+<td>Ràpida implementació; manteniment gestionat pel proveïdor</td>
+<td>La implementació pot ser més lenta; manteniment intern</td>
+<td>Requereix integració i manteniment continu de ambdós entorns</td>
+<td>Implementació distribuïda entre serveis; manteniment distribuït</td>
+</tr>
+<tr>
+<td><strong>Compliment normatiu</strong></td>
+<td>Complix en regulacions específiques del proveïdor</td>
+<td>Permet major control i adaptabilitat a regulacions internes</td>
+<td>Possibilitat d’allotjar dades crítiques internament per a complir normatives</td>
+<td>Les organitzacions seleccionen proveïdors compatibles amb normatives</td>
+</tr>
+<tr>
+<td><strong>Resiliència i continuïtat del negoci</strong></td>
+<td>Risc de dependència d'un sol proveïdor</td>
+<td>Major dependència de proveïdors externs; més control</td>
+<td>Major resiliència al distribuir càrregues de treball</td>
+<td>Resiliència millorada amb diversificació entre proveïdors</td>
+</tr>
+<tr>
+<td><strong>Aplicacions i càrregues de treball</strong></td>
+<td>Adequada per a aplicacions no crítiques i càrregues variables</td>
+<td>Ideal per a aplicacions crítiques que requerixen seguretat</td>
+<td>Versatilitat per a allotjar tant aplicacions crítiques com no crítiques</td>
+<td>Adaptabilitat per a distintos tipus de aplicacions i serveis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-serveis-en-el-nuvol">3. Serveis en el núvol</h2>
+<p>Els models de servei en el núvol, també coneguts com models d’implementació en el núvol, descriuen com s’ofereixen i es consumixen els serveis en el context del núvol. Estos models definixen les relacions entre proveïdors i usuaris finals, així com la gestió de recursos i responsabilitats.</p>
+<p>A continuació, es poden veure els tres models principals de serveis en el núvol:</p>
+<h3 id="31-infraestructura-com-a-servei-iaas">3.1. Infraestructura com a servei (IaaS)</h3>
+<p>En el model <strong>IaaS</strong>, els usuaris tenen accés remot a una infraestructura (hardware) virtualitzada a través d’internet. Esto inclou recursos com <strong>servidors virtuals</strong>, <strong>emmagatzematge</strong> i <strong>xarxes</strong> que són gestionats i escalats segons les demandes de l’usuari.</p>
+<p>Les principals característiques d'IaaS són:</p>
+<ul>
+<li><strong>Virtualització de recursos</strong>: s’utilitza la virtualització per oferir recursos computacionals, d’emmagatzematge i xarxes.</li>
+<li><strong>Escalabilitat dinàmica</strong>: la capacitat d’augmentar o disminuir recursos segons les necessitats empresarials.</li>
+<li><strong>Control total</strong>: els usuaris mantenen control total sobre el sistema operatiu, configuracions i aplicacions.</li>
+<li><strong>Model de pagament per ús</strong>: la facturació es realitza d’acord amb l’utilització real dels recursos, evitant costos fixos.</li>
+</ul>
+<p>El principal inconvenient de este model és la <strong>complexitat en la gestió de la infraestructura</strong>, requerint habilitats tècniques avançades. També cal tindre en compte que l'escalabilitat és manual (el que li resta agilitat) i que el cost és variable, el que dificulta la gestió pressupostària. El model IaaS té un gran avantatge: l’accés a recursos de hardware que, d’altra manera, exigiria una inversió que normalment no és possible assumir.</p>
+<p>Exemples de serveis IaaS inclouen <strong>EC2 d’Amazon Web Services</strong> (AWS), <strong>Google Compute Engine (GCE) de Google Cloud Platform</strong> i <strong>Azure Virtual Machines de Microsoft Azure</strong>.</p>
+<h3 id="32-plataforma-com-a-servei-paas">3.2. Plataforma com a servei (PaaS)</h3>
+<p>El model de <strong>PaaS</strong> proporciona als desenvolupadors un <strong>entorn complet per al desenvolupament, implementació i execució d’aplicacions</strong>. Se’ls allibera de preocupacions sobre la infraestructura subjacent, permetent el desenvolupament de aplicacions de manera eficient.</p>
+<p>Les principals característiques de PaaS són:</p>
+<ul>
+<li><strong>Entorn de desenvolupament complet</strong>: oferix ferramentes i serveis, com entorns de desenvolupament, bases de dades, per a facilitar el desenvolupament d'aplicacions.</li>
+<li><strong>Implementació senzilla i àgil</strong>: permet el desplegament senzill d’aplicacions sense preocupar-se per la gestió de servidors.</li>
+<li><strong>Escalabilitat automàtica</strong>: la plataforma gestiona automàticament les necessitats de l’aplicació.</li>
+<li><strong>Gestió simplificada de recursos</strong>: els desenvolupadors se centren en el lògica de l’aplicació, delegant la gestió de la infraestructura a la plataforma.</li>
+</ul>
+<p>El principal inconvenient de este model és la <strong>limitació en la personalització de la infraestructura</strong>. Per tant, les decisions tècniques poden tindre una dependència significativa del proveïdor de serveis. No obstant això, com en el model IaaS, suposa un considerable estalvi en entorns de treball on no siga necessari disposar de la plataforma, no del hardware.</p>
+<p>Exemples de PaaS inclouen <strong>Google App Engine</strong>, <strong>Microsoft Azure App Service</strong>, <strong>Amazon Elastic Beanstalk</strong> i <strong>Heroku</strong>.</p>
+<h3 id="33-software-com-a-servei-saas">3.3. Software com a servei (SaaS)</h3>
+<p>El model de <strong>SaaS</strong> oferix <strong>aplicacions preparades per a usar a través d’internet</strong>. Els usuaris accedeixen a estes aplicacions a través d’un navegador web, el que elimina la necessitat d’instal·lació i manteniment local.</p>
+<p>Les principals característiques de SaaS són:</p>
+<ul>
+<li><strong>Accés a aplicacions remotes</strong>: les aplicacions són accessibles directament des de la núvol sense instal·lació local.</li>
+<li><strong>Gestió centralitzada</strong>: el proveïdor s’encarrega de la gestió, manteniment i actualitzacions de la aplicació.</li>
+<li><strong>Model de pagament per subscripció</strong>: la facturació es realitza mitjançant el model de subscripció periòdica.</li>
+<li><strong>Escalabilitat segons usuaris</strong>: l’escalabilitat s’ajusta fàcilment al número de usuaris.</li>
+</ul>
+<p>El principal inconvenient de este model, com succeïx amb el PaaS, és la <strong>limitació en la personalització</strong>, ja que estan dissenyades per a ser genèriques i utilitzades per una àmplia audiència. Del mateix mode, existix una <strong>dependència significativa del proveïdor de serveis</strong>. Per últim, encara que els proveïdors de SaaS solen oferir alts estàndards de seguretat, algunes organitzacions poden tindre preocupacions sobre la <strong>privacitat de les dades</strong>, especialment si la informació sensible s’emmagatzema en la núvol.</p>
+<p>A més, la funcionalitat i fins i tot els preus de les solucions SaaS depenen de qui va a ser el seu <strong>públic objectiu</strong>:</p>
+<ul>
+<li><strong>Solucions SaaS B2B</strong> (<em>de empresa a empresa</em>), que estan orientades a proporcionar un servei específic a altres empreses. Per exemple, CRM, eines de comptabilitat o plataformes de màrqueting...</li>
+<li><strong>Solucions SaaS B2C</strong> (<em>de empresa a consumidor</em>), que estan orientades a oferir un servei a l'usuari final. Per exemple, serveis de streaming o de galeria instantània...</li>
+</ul>
+<p>A més d’esta classificació, les solucions SaaS solen categoritzar-se en funció del seu abast dins de l’organització:</p>
+<ul>
+<li><strong>SaaS horitzontal</strong>: dissenyat per a <strong>cobrir necessitats empresarials generals</strong>, com gestió de recursos humans, gestió financera, col·laboració i comunicació. Es caracteritza per la versatilitat i adaptabilitat a diverses indústries.</li>
+<li><strong>SaaS vertical</strong>: orientat a sectors específics amb necessitats particulars, com ara la indústria farmacèutica, biotecnologia, legal o educació.</li>
+</ul>
+<p>Una comparació habitual seria entre <strong>Microsoft 365</strong> i <strong>Google Workspace</strong>, que inclouen correu electrònic, processament de textos, fulls de càlcul i altres ferramentes de col·laboració. Estes són solucions SaaS horitzontals.</p>
+<div class="admonition info">
+<p class="admonition-title">Vocabulari</p>
+<ul>
+<li><strong>IaaS</strong>: <em>Infrastructure-as-a-service</em>, o infraestructura com a servei.</li>
+<li><strong>PaaS</strong>: <em>Platform-as-a-service</em>, o plataforma com a servei.</li>
+<li><strong>SaaS</strong>: <em>Software-as-a-service</em>, o software com a servei.</li>
+<li><strong>XaaS:</strong> <em>everything-as-a-service</em>, o tot com a servei.</li>
+<li><strong>B2B</strong>: <em>Business-to-business</em>, o empresa a empresa.</li>
+<li><strong>B2C</strong>: <em>Business-to-consumer</em>, o empresa a consumidor.</li>
+</ul>
+</div>
+<p><img alt="Models de serveis en el núvol" src="../images/iaas-paas-saas-comparison.jpg" /></p>
+<p>A manera de resum, en la següent imatge es poden observar els principals models de serveis en el núvol juntament amb les capes gestionades per l’usuari i el proveïdor en cadascun d’ells.</p>
+<table>
+<thead>
+<tr>
+<th>Tradicional (on premise)</th>
+<th>IaaS</th>
+<th>PaaS</th>
+<th>SaaS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicacions (gestionat per usuari)</td>
+<td>Aplicacions (gestionat per usuari)</td>
+<td>Aplicacions (gestionat per usuari)</td>
+<td>Aplicacions (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Dades (gestionat per usuari)</td>
+<td>Dades (gestionat per usuari)</td>
+<td>Dades (gestionat per usuari)</td>
+<td>Dades (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Software intermedi (gestionat per usuari)</td>
+<td>Software intermedi (gestionat per usuari)</td>
+<td>Software intermedi (gestionat per proveïdor)</td>
+<td>Software intermedi (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Sistema operatiu (gestionat per usuari)</td>
+<td>Sistema operatiu (gestionat per usuari)</td>
+<td>Sistema operatiu (gestionat per proveïdor)</td>
+<td>Sistema operatiu (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Virtualització (gestionat per usuari)</td>
+<td>Virtualització (gestionat per usuari)</td>
+<td>Virtualització (gestionat per proveïdor)</td>
+<td>Virtualització (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Servidors (gestionat per usuari)</td>
+<td>Servidors (gestionat per usuari)</td>
+<td>Servidors (gestionat per proveïdor)</td>
+<td>Servidors (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Emmagatzematge (gestionat per usuari)</td>
+<td>Emmagatzematge (gestionat per proveïdor)</td>
+<td>Emmagatzematge (gestionat per proveïdor)</td>
+<td>Emmagatzematge (gestionat per proveïdor)</td>
+</tr>
+<tr>
+<td>Xarxa (gestionat per usuari)</td>
+<td>Xarxa (gestionat per proveïdor)</td>
+<td>Xarxa (gestionat per proveïdor)</td>
+<td>Xarxa (gestionat per proveïdor)</td>
+</tr>
+</tbody>
+</table>
+<p>Aquests models no són excloents; de fet, es poden integrar per crear un entorn de núvol complet que aborde diverses necessitats empresarials.</p>
+<p>La elecció entre IaaS, PaaS i SaaS depèn dels objectius i requisits de l’organització. IaaS ofereix més control sobre la infraestructura, mentre que PaaS ofereix una plataforma gestionada, equilibrant control i simplificació. SaaS proporciona aplicacions llestes per usar sense preocupacions sobre la infraestructura.</p>
+<h3 id="34-el-model-de-tot-com-a-servei-xaas">3.4. El model de tot com a servei (XaaS)</h3>
+<p><strong>XaaS</strong>, que significa <em>tot com a servei</em>, és un terme col·lectiu que engloba una àmplia gamma de serveis i solucions dissenyats per ser oferts a través d’internet en lloc de ser proporcionats localment o gestionats <em>in situ</em>. </p>
+<p>Aquest model es basa en el núvol i representa l’evolució i expansió dels conceptes de SaaS, PaaS i IaaS, entre altres.  </p>
+<p>Les seves principals <strong>característiques</strong> són: </p>
+<ul>
+<li><strong>Flexibilitat:</strong> els usuaris poden personalitzar els serveis segons les seves necessitats específiques, triant i pagant només pel que utilitzen.  </li>
+<li><strong>Escalabilitat:</strong> facilitat per escalar els serveis cap amunt o cap avall depenent de la demanda, sense la necessitat de canvis significatius en la infraestructura física.  </li>
+<li><strong>Cost-eficiència:</strong> redueix la necessitat d’inversions inicials grans en <em>hardware</em> i <em>software</em>, i converteix els costos de capital en costos operatius predictibles.  </li>
+<li><strong>Accés remot:</strong> permet l’accés a serveis i dades des de qualsevol lloc, proporcionant models de treball flexibles i a distància.  </li>
+</ul>
+<p>XaaS ha crescut per incloure pràcticament qualsevol tipus de servei o producte que es puga entregar a través del núvol, oferint a les empreses i consumidors, entre altres, els següents <strong>avantatges:</strong>:</p>
+<ul>
+<li><strong>Innovació accelerada:</strong> permet a les empreses adoptar noves tecnologies ràpidament sense necessitat d’expertesa especialitzada o inversions significatives.  </li>
+<li><strong>Manteniment reduït:</strong> els proveïdors de serveis s’encarreguen del manteniment, les actualitzacions i la gestió de la infraestructura.  </li>
+<li><strong>Millora en la competitivitat:</strong> facilita a les petites i mitjanes empreses l’accés a tecnologies i serveis que d’altra manera estarien fora del seu abast, anivellant el camp de joc amb empreses més grans.  </li>
+</ul>
+<p>El model XaaS representa una tendència creixent cap a l’externalització d’infraestructura IT de l’empresa; no obstant, cal tenir en compte tres aspectes clau a l’hora d’adoptar-lo:  </p>
+<ul>
+<li><strong>Dependència d’una connexió a internet estable:</strong> interrupcions o inestabilitats poden provocar temps d’inactivitat significatius, impactant negativament la productivitat.  </li>
+<li><strong>Elecció de proveïdors de confiança:</strong> la seguretat i privacitat de les dades són fonamentals en l’adopció de serveis XaaS. Seleccionar proveïdors que compleixin amb estàndards de seguretat i oferisquen compromisos respecte a la protecció de dades és crucial per evitar bretxes i garantir la confidencialitat de la informació.  </li>
+<li><strong>Gestió de relacions amb múltiples proveïdors:</strong> administrar múltiples relacions amb proveïdors de XaaS presenta desafiaments relacionats amb la coordinació de contractes, la integració de serveis i la gestió d’expectatives de rendiment.  </li>
+</ul>
+<p>Alguns exemples de serveis XaaS inclouen:</p>
+<ul>
+<li>
+<p><strong>Desktop-as-a-Service</strong><br />
+Desktop com a servei (<strong>DaaS</strong>) és un exemple de XaaS en el qual es virtualitza l’escriptori de l’equip perquè l’usuari puga accedir a ell i les seues aplicacions des de qualsevol dispositiu amb connexió a internet.</p>
+</li>
+<li>
+<p><strong>Artificial Intelligence as a Service (AIaaS)</strong><br />
+Intel·ligència artificial com a servei (<strong>AIaaS</strong>) és un exemple de XaaS en el qual es ofereixen eines i entorns d’intel·ligència artificial per permetre a les empreses implementar solucions d’IA sense adquirir una infraestructura costosa.</p>
+</li>
+</ul>
+<h2 id="4-possibilitats-de-feina-en-el-nuvol">4. Possibilitats de feina en el núvol</h2>
+<p>La computació en el núvol ha transformat radicalment la forma en què les empreses implementen i gestionen la seva infraestructura IT, oferint solucions flexibles i escalables que s’adapten a una varietat de necessitats operatives.</p>
+<h3 id="41-solucions-utilitzant-el-model-iaas">4.1. Solucions utilitzant el model IaaS</h3>
+<p>Algunes de les principals possibilitats de feina que es poden abordar al núvol utilitzant el model IaaS són les següents:</p>
+<ul>
+<li>
+<p><strong>Serveis de computació</strong><br />
+  Ofereixen recursos de <strong>processament de dades com CPU, GPU i clústers d'alt rendiment</strong>. Aquests serveis permeten l’escalat de recursos d’acord amb la demanda, gestionen grans volums de dades i executen aplicacions complexes.<br />
+  Alguns exemples d’aquests serveis són AWS EC2, Google Compute Engine o Microsoft Azure VM.</p>
+</li>
+<li>
+<p><strong>Serveis d’emmagatzematge</strong><br />
+  Proporcionen espais per a l’<strong>emmagatzematge de dades al núvol</strong> amb alta disponibilitat i seguretat. Tot i que es poden confondre amb serveis de còpia de seguretat, aquests serveis no estan orientats a gestionar còpies de seguretat, sinó simplement a emmagatzemar informació.<br />
+  Alguns exemples d’aquests serveis són Amazon S3, Azure Blob Storage o Google Cloud Storage.</p>
+</li>
+<li>
+<p><strong>Serveis de còpia de seguretat</strong><br />
+  Ofereixen solucions per a la protecció de dades mitjançant <strong>còpies de seguretat</strong> automàtiques i sistemes de recuperació davant desastres, assegurant la integritat i la disponibilitat de la informació.<br />
+  Alguns exemples d’aquests serveis són AWS Backup, Azure Backup, Veeam Backup o Acronis Cyber Protect.</p>
+</li>
+<li>
+<p><strong>Serveis de xarxa</strong><br />
+  Aquests serveis ofereixen <strong>infraestructura de xarxa al núvol</strong>, incloent equilibradors de càrrega, VPN i DNS per facilitar la connectivitat i la gestió de xarxes.<br />
+  Alguns exemples d’aquests serveis són AWS VPC, Azure Load Balancer i Google Cloud DNS.</p>
+</li>
+</ul>
+<h3 id="42-solucions-utilitzant-el-model-paas">4.2. Solucions utilitzant el model PaaS</h3>
+<p>Algunes de les principals possibilitats de feina que es poden abordar al núvol utilitzant el model PaaS són les següents:</p>
+<ul>
+<li>
+<p><strong>Gestió del cicle de vida d’aplicacions (ALM)</strong><br />
+  Aquests serveis integren la <strong>planificació, desenvolupament, prova, desplegament i manteniment d’aplicacions de <em>software</em></strong>. Faciliten la col·laboració entre equips i l’automatització de processos de desenvolupament. Es tracta de solucions orientades a un perfil d’usuari molt específic, dedicat a tasques de desenvolupament i manteniment d’aplicacions tant en entorn web com multiplataforma.<br />
+  Alguns exemples d’aquests serveis són Atlassian JIRA, Microsoft Azure DevOps, GitLab o Red Hat OpenShift.</p>
+</li>
+<li>
+<p><strong>Portals d’aplicacions</strong><br />
+  Proporcionen infraestructures i eines per al desenvolupament i allotjament de portals web empresarials, amb funcionalitats com gestió de continguts, personalització i serveis de cerca.<br />
+  Alguns exemples d’aquests serveis són Liferay Portal i Oracle WebCenter.</p>
+</li>
+<li>
+<p><strong>Plataformes de desenvolupament d’aplicacions sense servidor</strong><br />
+  Aquestes plataformes permeten el desenvolupament d’aplicacions sense la necessitat de gestionar la infraestructura subjacent. Proporcionen un entorn sense servidor que escala automàticament segons la demanda, cosa que redueix la complexitat operativa.<br />
+  Alguns exemples d’aquests serveis són AWS Lambda i Azure Functions.</p>
+</li>
+</ul>
+<h3 id="43-solucions-utilitzant-el-model-saas">4.3. Solucions utilitzant el model SaaS</h3>
+<p>Algunes de les principals possibilitats de feina que es poden abordar al núvol utilitzant el model SaaS són les següents:</p>
+<ul>
+<li>
+<p><strong>Continguts, comunicació i col·laboració</strong><br />
+  Solucions basades al núvol que <strong>faciliten la comunicació interna i externa, la col·laboració en equip i la gestió de continguts</strong>, millorant la productivitat i l’eficiència.<br />
+  Alguns exemples d’aquests serveis són Microsoft Teams, Slack o Google Workspace.</p>
+</li>
+<li>
+<p><strong>Paquets de programari d’oficina</strong><br />
+  Proporcionen <strong>suites d’aplicacions d’oficina al núvol</strong>, incloent processadors de text, fulls de càlcul i eines de presentació. És un dels serveis més demandats pels usuaris, ja que permet treballar de manera col·laborativa sense necessitat de tenir el <em>software</em> instal·lat als equips.<br />
+  Alguns exemples d’aquests serveis són Microsoft 365 i Google Workspace.</p>
+</li>
+<li>
+<p><strong>Programari de gestió empresarial</strong><br />
+  Ofereixen solucions de programari al núvol per a la <strong>gestió integral d’empreses</strong>, incloent <strong>CRM, ERP i recursos humans</strong>. Optimitzen els processos empresarials.<br />
+  Alguns exemples d’aquests serveis són SAP Business One, Microsoft Dynamics 365, Oracle NetSuite, Ekon, Moloni, Holded o Macrogres.</p>
+</li>
+<li>
+<p><strong>Programari de màrqueting</strong><br />
+  Ofereixen eines en línia per a la <strong>gestió de <em>marketing</em>, automatització de <em>marketing</em> i anàlisi de dades</strong>, millorant l’efectivitat de les estratègies de <em>marketing</em>.<br />
+  Alguns exemples d’aquests serveis són Adobe Marketing Cloud, HubSpot, Mailchimp, Mailjet, MDirector o Acrelia News.</p>
+</li>
+<li>
+<p><strong>Programari de gestió de projectes</strong><br />
+  Aquests serveis faciliten la <strong>planificació, seguiment i col·laboració en projectes empresarials</strong>, optimitzant la gestió de recursos i terminis.<br />
+  Alguns exemples d’aquests serveis són Microsoft Project, GanttPro, Jira o Trello.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Vocabulari</p>
+<ul>
+<li><strong>CPU:</strong> <em>central processing unit</em>, o unitat central de procés (processador).  </li>
+<li><strong>GPU:</strong> <em>graphics processing unit</em>, o unitat de processament gràfic.  </li>
+<li><strong>VPN:</strong> <em>virtual private network</em>, o xarxa privada virtual.  </li>
+<li><strong>DNS:</strong> <em>domain name server</em>, o servidor de noms de domini.  </li>
+<li><strong>ALM:</strong> <em>application lifecycle management</em>, o gestió del cicle de vida de les aplicacions.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Navega</p>
+<p>Cada vegada són més les empreses i startups que es llancen al mercat creant solucions SaaS de tot tipus.<br />
+En aquest <a href="https://www.intelectium.com/es/post/startups-saas">article</a> s’enumeren deu startups espanyoles que ofereixen solucions SaaS: des de l’eliminació de contingut negatiu a internet a la gestió de campanyes d’<strong>influencers</strong>, passant per aplicacions per digitalitzar negocis d’hostaleria o mobilitat sota demanda.  </p>
+</div>
+<h2 id="5-edge-computing">5. <em>Edge computing</em></h2>
+<p>L'<strong><em>edge computing</em></strong> (o computació en la vora) és un paradigma informàtic que es distingeix per la seua capacitat de processar dades en la <em>perifèria de la xarxa</em>, en un dispositiu amb capacitat de còmput anomenat node <em>edge</em>, pròxim al que genera les dades, reduint la necessitat d'enviar les dades al núvol per al seu anàlisi i processament.</p>
+<p>A diferència dels models més tradicionals, centrats en el núvol, on tot el processament ocorre en ubicacions remotes, el <em>edge computing</em> descentralitza aquest procés, permetent que certes tasques es realitzen localment en els nodes <em>edge</em>.</p>
+<p>En termes simples, es podria considerar que posa el focus del processament en el lloc on es necessiten respostes, evitant el viatge d'anada i tornada al núvol per a cada sol·licitud de processament.</p>
+<p>Aquest paradigma no reemplaça el núvol; més bé, el complementa. El núvol continua essent essencial per a emmagatzemar grans volums de dades, realitzar anàlisis complexos i oferir serveis avançats. Però on <em>edge computing</em> brilla és en l’optimització de recursos al processar dades localment en temps real. En lloc de dependre exclusivament del núvol, aquest enfocament permet prendre decisions més ràpides i eficients en la vora de la xarxa, on l'acció és immediata i la connectivitat constant amb el núvol no sempre és pràctica. Vegem-ho amb alguns exemples il·lustratius:</p>
+<ol>
+<li>
+<p><strong>Internet de les coses (IoT)</strong><br />
+<strong>Escenari tradicional</strong>: en un entorn purament basat en el núvol, les dades dels sensors IoT s'enviarien de forma individual al núvol per al seu processament i, segons estiga establit, tornaran ordres per executar com a resposta a la informació proporcionada i el resultat del seu processament.<br />
+<strong>Amb <em>edge computing</em></strong>: ací, les dades dels sensors es processen localment en els nodes <em>edge</em>, permetent respostes instantànies i reduint la dependència de la connectivitat constant amb el núvol. Un exemple concret seria la monitorització en temps real de la temperatura en una instal·lació industrial.</p>
+</li>
+<li>
+<p><strong>Aplicacions de <em>streaming</em></strong><br />
+<strong>Escenari tradicional</strong>: la transmissió en viu (<em>streaming</em>) sol dependre del núvol per al processament i la distribució del contingut.<br />
+<strong>Amb <em>edge computing</em></strong>: es permet la distribució de contingut en temps real des de servidors propers a l'usuari final, millorant la qualitat de la transmissió i reduint la latència. Un exemple pràctic seria la transmissió d’esdeveniments esportius, on la latència mínima és essencial per a l’experiència de l’espectador.</p>
+</li>
+<li><strong>Vehicles autònoms</strong><br />
+<strong>Escenari tradicional</strong>: els vehicles autònoms confien en el núvol per a processar centralment les dades de tots els seus sensors i retornar els valors i respostes associats, segons hagen sigut programades les situacions i comportaments en el vehicle.<br />
+<strong>Amb <em>edge computing</em></strong>: el vehicle pot prendre decisions locals ràpides sense dependre completament de la connectivitat constant amb el núvol, millorant la seguretat. Un exemple seria la capacitat de resposta immediata d’un vehicle autònom davant una situació d’emergència.</li>
+</ol>
+<p>Com podem deduir dels exemples, els principals avantatges de l'<em>edge computing</em> són:</p>
+<ul>
+<li>
+<p><strong>Latència reduïda:</strong> al processar dades localment, es minimitza el temps que triga la informació en viatjar d’un punt a un altre, essencial per a aplicacions que requereixen respostes quasi instantànies. Això es veu clarament en sistemes de realitat virtual augmentada, on la latència mínima és crítica per a una experiència immersiva.</p>
+</li>
+<li>
+<p><strong>Estalvi d'ample de banda:</strong> al processar dades localment, es redueix la necessitat de transmetre grans volums de dades al núvol, optimitzant l’ús de l’ample de banda. Per exemple, en un sistema de vigilància amb càmeres en xarxa, on el processament local d’imatges minimitza la càrrega de la xarxa.</p>
+</li>
+<li>
+<p><strong>Menor dependència de la connectivitat:</strong> en no necessitar que totes les operacions es processen en el núvol, es redueix la dependència d’una connectivitat constant amb aquest per a realitzar tasques crítiques. Això és especialment valuós en entorns on la connectivitat pot ser intermitent o subjecta a limitacions. Per exemple, en operacions agrícoles remotes amb sensors de sòl i clima, en llocs on no sempre està garantida una bona connectivitat a internet.</p>
+</li>
+<li>
+<p><strong>Major disponibilitat i fiabilitat:</strong> al descentralitzar el processament, l'<em>edge computing</em> millora la disponibilitat i fiabilitat de les aplicacions. Els dispositius en la vora poden realitzar funcions crítiques fins i tot en absència de connectivitat amb el núvol, assegurant un funcionament continu en condicions adverses. Per exemple, en una línia robotitzada de producció industrial, es garanteix la realització d’operacions de manera ininterrompuda fins i tot en moments de pèrdua de connexió amb el núvol.</p>
+</li>
+<li>
+<p><strong>Major privadesa i seguretat:</strong> al limitar la transmissió de dades sensibles al núvol, es millora la privadesa i la seguretat de la informació. Per exemple, en sistemes de reconeixement facial on el processament local de les imatges redueix l’exposició de dades biomètriques a la xarxa.</p>
+</li>
+<li>
+<p><strong>Reducció de costos operatius:</strong> al processar dades localment en la vora, es redueix la necessitat de transferir grans volums d’informació al núvol, cosa que disminueix els costos associats a l’ample de banda i el consum en el núvol. Per exemple, en sistemes de monitorització d’energia en edificis intel·ligents, on nodes <em>edge</em> poden processar dades per ajustar la il·luminació i la climatització, reduint així la càrrega en el núvol.</p>
+</li>
+<li>
+<p><strong>Escalabilitat eficient:</strong> al distribuir la càrrega de treball entre dispositius en la vora i el núvol. A mesura que augmenta la demanda, es poden agregar nodes de processament en la vora per manejar increments locals, evitant una sobrecàrrega en el núvol. Per exemple, en sistemes de gestió de trànsit urbà, on la demanda varia segons l’hora del dia, l’escalabilitat permet ajustar dinàmicament la capacitat de processament en els nodes <em>edge</em> dels semàfors intel·ligents per gestionar millor el flux vehicular.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Navega</p>
+<p>En aquest <a href="https://www.youtube.com/watch?v=Tx3QbapIOsY">vídeo</a> podem veure una explicació senzilla i clara sobre què és l'<em>edge computing</em> i com funciona.</p>
+</div>
+<h2 id="6-fog-computing-i-mist-computing">6. Fog computing i mist computing</h2>
+<p>Fins ara hem vist dos models que podríem denominar <em>extrems</em>: per una banda, el <em>cloud computing</em>, en el qual el processament es duu al núvol; i, per l’altra, el <em>edge computing</em>, en el qual es recupera el processament en dispositius locals per evitar aquesta dependència del núvol.  </p>
+<p>D’aquests dos models en surten dos més, que veurem a continuació.</p>
+<h3 id="61-fog-computing">6.1. Fog computing</h3>
+<p>El <em>fog computing</em> (o computació en la boira) és un paradigma informàtic que estén el model de <em>edge computing</em> i porta el processament un pas més enllà. Mentre que el <em>edge computing</em> es centra en la proximitat local, el <em>fog computing</em> estén aquesta capacitat a dispositius intermedis, com són els encaminadors (<em>routers</em>) o les passarel·les (<em>gateways</em>), als quals se’ls dota de capacitat de còmput per realitzar tasques de processament i coordinació. A aquests dispositius intermedis se’ls coneix amb el nom de nodes <em>fog</em> (<em>fog nodes</em>).</p>
+<p>El processament es situa entre la vora i el núvol, realitzant el processament més a prop de la font de dades que el núvol, però més lluny que el dispositiu local en <em>edge computing</em>. D’aquesta manera, es manté la descentralització del processament de dades, amb tots els avantatges que això suposa, tal com vam veure en l’apartat anterior.</p>
+<p>No obstant això, cal tenir present que, encara que realitza processament en la vora, segueix col·laborant amb el núvol per a optimitzar la distribució de tasques: en concret, fa processament local per a tasques immediates i utilitza el núvol per a funcions més complexes o per a l’emmagatzematge a llarg termini.</p>
+<p>El núvol i el <em>fog computing</em> formen un model col·laboratiu, on el núvol segueix sent essencial per a proporcionar recursos a demanda i serveis avançats.</p>
+<p>El <em>fog computing</em> presenta reptes significatius, com complexitat en la gestió, preocupacions de seguretat i privacitat, costos inicials i de manteniment, latència variable, limitacions en l’escalabilitat, gestió de recursos limitats i dependència de la infraestructura local.</p>
+<h3 id="62-mist-computing">6.2. Mist computing</h3>
+<p>El <em>mist computing</em> (o <em>computació en l’extrem</em>, encara que literalment <em>mist</em> significa ‘<em>boira lleugera</em>’) representa una evolució del <em>edge computing</em> en portar el processament de dades directament als dispositius que generen la informació, com sensors i càmeres. En lloc de dependre exclusivament de nodes <em>edge</em>, aquest model capacita els propis dispositius per a realitzar tasques de processament local.</p>
+<p>En aquest paradigma, els dispositius no només actuen com a generadors de dades, sinó també com a centres de processament descentralitzats. Tenen la capacitat d’analitzar i processar informació en el lloc on es genera abans d’enviar dades rellevants a sistemes centralitzats o al núvol. Això resulta especialment beneficiós en situacions on la latència, l’ample de banda i la privadesa són consideracions crítiques.</p>
+<p>Per a millorar la capacitat de processament i, sobretot, la coordinació dels dispositius locals, es defineixen de manera complementària dispositius anomenats nodes <em>mist</em>. Aquests nodes poden ser específicament dissenyats per a aquesta tasca o nodes de processament que ja formen part de la xarxa i són aprofitats per a funcions de <em>mist computing</em>.</p>
+<p><img alt="Diagrama mist, edge, fog i cloud computing" src="../images/Fog-and-Edge-Computing.png" /></p>
+<p>Resumint, podem classificar els quatre models de computació segons la seua proximitat a la font de dades:</p>
+<ul>
+<li><strong>Entorn local</strong><ul>
+<li>Mist</li>
+<li>Edge</li>
+</ul>
+</li>
+<li><strong>Núvol</strong><ul>
+<li>Fog</li>
+<li>Cloud</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-eleccio-del-model-de-computacio">7. Elecció del model de computació</h2>
+<p>L’elecció del model de computació adequat per a les nostres circumstàncies, ja siga en el núvol (<em>cloud</em>), en la vora (<em>edge</em>), en la boira (<em>fog</em>) o en entorns de computació en l’extrem (<em>mist</em>), implica considerar una varietat de criteris.</p>
+<p>Cada model té les seues pròpies fortaleses i limitacions, i seleccionar l’enfocament correcte depèn de factors específics relacionats amb les necessitats empresarials i les característiques de les aplicacions.</p>
+<p>A continuació, es presenta una comparació detallada dels criteris clau que cal considerar:</p>
+<p>Cloud oferix flexibilitat i recursos centralitzats, mentre que <em>edge</em> proporciona processament pròxim a la font de dades. <em>Fog</em> combina característiques del núvol i el <em>edge</em>, i <em>mist</em> està dissenyat per a càrregues de treball altament distribuïdes.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Criteri</strong></th>
+<th><strong>Cloud</strong></th>
+<th><strong>Fog</strong></th>
+<th><strong>Mist</strong></th>
+<th><strong>Edge</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Latència i temps de resposta</strong></td>
+<td>Major</td>
+<td>Moderada</td>
+<td>Baixa</td>
+<td>Baixa</td>
+</tr>
+<tr>
+<td><strong>Escalabilitat</strong></td>
+<td>Alta</td>
+<td>Moderada</td>
+<td>Limitada</td>
+<td>Limitada</td>
+</tr>
+<tr>
+<td><strong>Localització de dades</strong></td>
+<td>Centralitzada</td>
+<td>Semilocal</td>
+<td>Local</td>
+<td>Local</td>
+</tr>
+<tr>
+<td><strong>Infraestructura i recursos</strong></td>
+<td>Centralitzats</td>
+<td>Semilocals</td>
+<td>Locals</td>
+<td>Locals</td>
+</tr>
+<tr>
+<td><strong>Connectivitat</strong></td>
+<td>Dependent de xarxa</td>
+<td>Pot ser local</td>
+<td>Pot ser local</td>
+<td>Pot ser local</td>
+</tr>
+<tr>
+<td><strong>Seguretat</strong></td>
+<td>Bona</td>
+<td>Bona</td>
+<td>Major</td>
+<td>Major</td>
+</tr>
+<tr>
+<td><strong>Costos</strong></td>
+<td>Operatius més baixos</td>
+<td>Economia d’escala</td>
+<td>Reducció d’ample de banda</td>
+<td>Reducció d’ample de banda</td>
+</tr>
+<tr>
+<td><strong>Aplicacions crítiques</strong></td>
+<td>No crítiques en temps real</td>
+<td>No crítiques en temps real</td>
+<td>Crítiques en temps real</td>
+<td>Crítiques en temps real</td>
+</tr>
+<tr>
+<td><strong>Tolerància a fallades</strong></td>
+<td>Depén de redundància</td>
+<td>Depén de redundància</td>
+<td>Major localment</td>
+<td>Major localment</td>
+</tr>
+<tr>
+<td><strong>Complexitat de gestió</strong></td>
+<td>Menys complexa</td>
+<td>Moderada</td>
+<td>Major</td>
+<td>Major</td>
+</tr>
+<tr>
+<td><strong>Innovació tecnològica</strong></td>
+<td>Ràpida adopció</td>
+<td>Adopció moderada</td>
+<td>Adopció lenta</td>
+<td>Adopció lenta</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-us-del-nuvol-i-la-rendibilitat-de-lempresa">8. Ús del núvol i la rendibilitat de l’empresa</h2>
+<p>L’ús del núvol pot tindre un impacte significatiu en la rendibilitat d'una empresa al oferir una sèrie de beneficis econòmics i financers. Anem a explorar els aspectes clau relacionats amb la rendibilitat:</p>
+<ol>
+<li>
+<p><strong>Model de costos eficient</strong></p>
+<p>El núvol permet a les empreses adoptar un <strong>model de costos més eficient al pagar només pels recursos que consumixen</strong>.
+De esta manera, s’elimina la necessitat de grans inversions inicials en <em>hardware</em> i <em>software</em>, reduint els costos de capital i permetent una assignació més precisa dels gastos operatius.</p>
+</li>
+<li>
+<p><strong>Reducció de costos operatius</strong></p>
+<p>L'externalització d'infraestructura i serveis en el núvol disminueix els costos operatius associats amb el <strong>manteniment, l’administració i l'actualització de la infraestructura local</strong>.
+Això permet a les empreses centrar-se en les seues competències principals i reduir les depeses relacionades amb la gestió de la tecnologia.</p>
+</li>
+<li>
+<p><strong>Escalabilitat i adaptabilitat</strong></p>
+<p>La <strong>capacitat d’escalar recursos</strong> de manera ràpida i eficient en el núvol permet a les empreses adaptar-se a canvis en la demanda sense incurrix en costos addicionals significatius.
+Així, es facilita la gestió de pics de càrrega i s’optimitza l’eficiència operativa al evitar inversions costoses en capacitat no utilitzada.</p>
+</li>
+<li>
+<p><strong>Flexibilitat de pagament per ús (PAYG)</strong></p>
+<p>El model de pagament per ús en el núvol significa que <strong>les empreses paguen només pels recursos i serveis que consumixen</strong>.
+Esta opció proporciona una major flexibilitat financera al adaptar les despeses als ingressos generats o als que estan previstos obtindre a curt o mitjà termini, evitant compromisos a llarg termini. També suposa un gran avantatge respecte als models tradicionals, ja que les empreses poden donar resposta a altes demandes en períodes concrets o incrementar la seua capacitat sense grans inversions inicials.</p>
+</li>
+<li>
+<p><strong>Optimització de recursos i temps de implementació</strong></p>
+<p>La <strong>implementació ràpida</strong> i <strong>l'optimització dels recursos</strong> en el núvol permeten a les empreses posar en marxa projectes amb més agilitat.
+El resultat és una acceleració en el temps d’implementació que pot traduir-se en ingressos més ràpids i un avantatge competitiu.</p>
+</li>
+<li>
+<p><strong>Accés a tecnologia avançada sense inversió inicial</strong></p>
+<p>El núvol proporciona <strong>accés a tecnologies avançades</strong> que les empreses poden utilitzar sense fer inversions inicials significatives.
+Este estalvi fomenta la innovació al permetre a les empreses aprofitar les últimes capacitats tecnològiques sense el cost inicial.</p>
+</li>
+<li>
+<p><strong>Estalvis en manteniment i actualitzacions</strong></p>
+<p>Els serveis en el núvol inclouen <strong>manteniment i actualitzacions automàtiques</strong>, reduint la càrrega de treball i els costos associats.<br />
+Com a conseqüència, s’elimina la necessitat de personal dedicat per a estes tasques, permetent a l’empresa enfocar-se en activitats més estratègiques.</p>
+</li>
+</ol>
+<div class="admonition info vocabulari">
+<p class="admonition-title">Info</p>
+<ul>
+<li><strong>PAYG</strong>: <em>pay-as-you-go</em>, o pagament per ús.</li>
+</ul>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
